@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Fromages = () => {
+function Fromages() {
   return (
     <div>
-
+      <p>test fromages</p>
     </div>
   );
-};
+}
 
 export default Fromages;

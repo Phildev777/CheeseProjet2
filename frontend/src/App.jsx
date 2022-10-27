@@ -1,11 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Fromages from "./pages/Fromages";
+import Recettes from "./pages/Recettes";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p>test</p>
+      <Router>
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Fromages" element={<Fromages />} />
+          <Route exact path="/Recettes" element={<Recettes />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

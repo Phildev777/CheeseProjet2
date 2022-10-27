@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Fromages from "./pages/Fromages";
 import Recettes from "./pages/Recettes";
+import Footer from "./components/Footer"
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/Recettes" element={<Recettes />} />
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

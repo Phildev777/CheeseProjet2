@@ -7,16 +7,21 @@
   box-sizing: border-box;
 }
 
+.navbar {
+  position: fixed;
+  bottom: 0;
+  height: 8vh;
+  background-color: #080808;
+}
+
 .navbarMobile {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  position: fixed;
-  bottom: 0;
-  background-color: #080808;
-  height: 8vh;
+
+
 }
 
 .navbarDesktop {

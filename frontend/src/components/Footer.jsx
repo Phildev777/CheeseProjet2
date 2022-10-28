@@ -1,8 +1,8 @@
 import React from 'react';
 import "./style/footer.css";
 import facebookIcon from "../assets/facebookIcon.png";
-import InstagramIcon from "../assets/Instagram.png";
-import TwitterIcon from "../assets/Twitter.png";
+import InstagramIcon from "../assets/instagram.png";
+import TwitterIcon from "../assets/twitter.png";
 
 
 const Footer = () => {

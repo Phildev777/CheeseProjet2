@@ -1,11 +1,12 @@
 import React from "react";
+import Recettes from "@components/FuncCarteRecette";
 
-function Recettes() {
+function Recette() {
   return (
     <div>
-      <p>test recettes</p>
+      <Recettes />
     </div>
   );
 }
 
-export default Recettes;
+export default Recette;

@@ -1,25 +1,25 @@
 .footer {
-    background-color: #212121;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    color: #FFC83C;
-    font-size: 10px;
-    margin-bottom: 8vh;
-    margin-top: 70vh;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  color: #ffc83c;
+  font-size: 10px;
+  margin-bottom: 8vh;
+  margin-top: 70vh;
 }
 
 .footerIcons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 4px
+  display: flex;
+  gap: 10px;
+  margin-bottom: 4px;
 }
 
-@media screen and (min-width:800px) {
-    .footer {
-        margin-top: 80vh;
-        margin-bottom: 0;
-    }
+@media screen and (min-width: 800px) {
+  .footer {
+    margin-top: 80vh;
+    margin-bottom: 0;
+  }
 }

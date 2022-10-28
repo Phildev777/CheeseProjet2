@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Fromages from "./pages/Fromages";
 import Recettes from "./pages/Recettes";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 import "./App.css";
 

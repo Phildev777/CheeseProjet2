@@ -13,12 +13,7 @@ import iconeFromageSelected from "../assets/iconeFromageSelected.png";
 import iconeCuisineSelected from "../assets/iconeCuisineSelected.png";
 
 function Nav() {
-  /*    const [homeIcon, setHomeIcon] = React.useState(iconeAccueilSelected);
-          const [cheeseIcon, setCheeseIcon] = React.useState(iconeFromage);
-          const [recipeIcon, setRecipeIcon] = React.useState(iconeCuisine); */
-  const [isCheeseOn, setIsCheeseOn] = React.useState(false);
-  const [isRecipeOn, setIsRecipeOn] = React.useState(false);
-  const [isHomeOn, setIsHomeOn] = React.useState(true);
+
   const cheeseOn = () => {
     setIsCheeseOn(true);
     setIsRecipeOn(false);

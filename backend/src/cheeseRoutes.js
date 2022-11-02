@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const cheeseDatas = require('./datas/cheese');
+const cheeseDatas = require('./cheese');
 
 
 

@@ -1,14 +1,14 @@
 import React from "react";
 import "./style/header.css";
 
-function Header() {
+function Header2() {
   return (
     <div>
       <header className="Head">
-        <h1>Nos Fromages</h1>
+        <h1>Nos Recettes</h1>
       </header>
     </div>
   );
 }
 
-export default Header;
+export default Header2;

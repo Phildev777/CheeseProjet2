@@ -1,49 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/style/fromages.css";
 import Header from "@components/Header";
-import image from "../assets/Imagefromage.jpeg";
+
 
 function Fromages() {
+    const [isFlipped, setIsFlipped] = useState(true);
+
+
   return (
     <div>
       <Header />
       <div className="Card">
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
-        <li className="carte">
-          <img className="images" src={image} alt="imgHeader" />
-          <button type="button">Le fromage</button>
-        </li>
+        
+        <li className="scene scene--card">
+            <button
+              type="button"
+              className={`card ${isFlipped && "is-flipped"}`}
+              onClick={() => setIsFlipped(!isFlipped)}
+            >
+              <div className="card_face card_face--front">recette1</div>
+              <div className="card_face card_face--back">description</div>
+            </button>
+          </li>
+
+
       </div>
     </div>
   );

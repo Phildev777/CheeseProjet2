@@ -12,6 +12,7 @@
   bottom: 0;
   height: 8vh;
   background-color: #080808;
+  z-index: 10;
 }
 
 .navbarMobile {

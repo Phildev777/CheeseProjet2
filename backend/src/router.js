@@ -1,13 +1,14 @@
-const express = require("express");
+const router = require('express').Router();
+const cheeseDatas = require('./datas/cheese');
 
-const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+router.get("/", (req, res) => {
+    res.json(cheeseDatas).status(200);
+});
+
+router.get("/:id", (req, res) => {
+    res.json(cheeseDatas.filter((cheese) => cheese.id.toString() === req.params.id)[0]).status(200);
+});
 
 module.exports = router;

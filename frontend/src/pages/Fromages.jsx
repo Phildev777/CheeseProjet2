@@ -9,40 +9,40 @@ function Fromages() {
       <Header />
       <div className="Card">
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
         <li className="carte">
-          <img className="images" src={image} />
-          <a>Le fromage</a>
+          <img className="images" src={image} alt="imgHeader" />
+          <button type="button">Le fromage</button>
         </li>
       </div>
     </div>

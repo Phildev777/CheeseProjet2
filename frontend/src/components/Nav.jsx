@@ -13,6 +13,9 @@ import iconeFromageSelected from "../assets/iconeFromageSelected.png";
 import iconeCuisineSelected from "../assets/iconeCuisineSelected.png";
 
 function Nav() {
+  const [isCheeseOn, setIsCheeseOn] = React.useState(false);
+  const [isRecipeOn, setIsRecipeOn] = React.useState(false);
+  const [isHomeOn, setIsHomeOn] = React.useState(true);
 
   const cheeseOn = () => {
     setIsCheeseOn(true);

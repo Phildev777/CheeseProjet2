@@ -1,0 +1,44 @@
+.containerimage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 10, 0) 0%,
+      rgba(19, 19, 20, 0.8848272585401348) 100%,
+      rgba(129, 128, 89, 0.5935107319294906) 100%
+    ),
+    url("../../assets/img/boisNoir.jpg") center;
+}
+.slide {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 1px solid #ffd369;
+  transition-duration: 0.5s;
+  margin: 5% 0 5% 0;
+}
+
+.buttonnext {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffd369;
+  background-color: transparent;
+  border: none;
+  font-size: 120%;
+  opacity: 0.6;
+}
+
+.buttonprev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffd369;
+  background-color: transparent;
+  border: none;
+  font-size: 120%;
+  opacity: 0.6;
+}

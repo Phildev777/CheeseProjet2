@@ -7,6 +7,7 @@ function Staff() {
     <div>
       {DataHome.map((character) => (
         <DataHomeBase
+          key={character.id}
           image={character.image}
           name={character.name}
           description={character.description}

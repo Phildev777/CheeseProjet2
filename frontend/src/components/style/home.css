@@ -1,21 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap%27");
 
-.header {
-  background-color: #212121;
-  color: #ffd369;
-  text-align: center;
-  font-family: "Cinzel", serif;
-}
-
 .texthome {
-  color: #ffd369;
+  color: #ffc83c;
   font-family: "Playfair Display", serif;
-  font-size: 200%;
+  font-size: 2rem;
+  font-weight: lighter;
   text-align: center;
   margin-top: 6%;
   -webkit-text-stroke: 0.2px #212121;
-  text-shadow: 0.1em 0.1em 0.2em #212121;
+  text-shadow: 1px 1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121,
+    -1px -1px 0 #212121, 1px 0px 0 #212121, 0px 1px 0 #212121,
+    -1px 0px 0 #212121, 0px -1px 0 #212121;
 }
 
 .character {
@@ -26,9 +22,7 @@
   border-radius: 0 30px 0 30px;
   border: 1px solid #ffd369;
   font-family: "Alice", serif;
-  -webkit-box-shadow: 5px 5px 12px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 12px 5px rgba(0, 0, 0, 0.3);
-  opacity: 0.9;
 }
 
 .image {

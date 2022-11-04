@@ -1,11 +1,14 @@
 import React from "react";
 import Recettes from "@components/FuncCarteRecette";
-import Header2 from "@components/Header2.jsx";
+import Header from "@components/Header.jsx";
 
 function Recette() {
   return (
     <div>
-      <Header2 />
+      <Header
+        pageName="Nos Recettes"
+        imageUrl="https://assets.afcdn.com/recipe/20161130/59380_w1024h768c1cx2808cy1872.webp"
+      />
       <Recettes />
     </div>
   );

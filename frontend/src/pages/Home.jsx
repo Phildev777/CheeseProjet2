@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import "../components/style/home.css";
 import Staff from "../components/Staff";
+import Formulaire from "../components/Formulaire";
 
 function Home() {
   return (
@@ -16,8 +17,9 @@ function Home() {
         conseil.
       </p>
       <p className="textcontact">
-        Nous nous engageons à vous répondre dans les meilleurs deélais.
+        Nous nous engageons à vous répondre dans les meilleurs délais.
       </p>
+      <Formulaire />
     </div>
   );
 }

@@ -64,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: 7vh;
     background-color: #080808;
     width: 100%;
     padding: 4px 0 4px 4px;
@@ -72,8 +72,14 @@
     top: 0;
   }
 
+  .logo {
+    height: 7vh;
+    width: 7vh;
+    padding: 4px;
+  }
+
   .logoImg {
-    height: 40px;
+    width: 100%;
   }
 
   .desktopLinks {
@@ -93,6 +99,7 @@
     text-decoration: none;
     color: #ffc83c;
     font-family: "Cinzel";
+    font-weight: bold;
     height: 100%;
     width: 100%;
     transition: 0.4s;

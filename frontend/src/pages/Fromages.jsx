@@ -1,12 +1,21 @@
 import React from "react";
-import Header from "@components/Header";
+
 import FuncFromage from "@components/FuncFromage";
+
+import "../components/style/fromages.css";
+import Header from "@components/Header";
+
+
+
 
 function Fromages() {
   return (
     <div>
+
       <Header />
       <FuncFromage />
+
+
     </div>
   );
 }

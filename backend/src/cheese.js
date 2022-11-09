@@ -528,4 +528,5 @@ const cheeses = [
       "Le Sainte- Maure de Touraine est un fromage de chèvre à croûte naturelle et à pâte molle. Il est percé dune paille en son centre, sur toute la longueur. Cette tige sert à tenir le fromage et à éviter qu'il ne casse. Son goût légèrement typé chèvre et acidulé ainsi que sa texture fine et fondante séduiront les amateurs de fromages frais.",
   },
 ];
+
 module.export = cheeses;

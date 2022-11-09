@@ -3,15 +3,6 @@
   margin: 0;
 }
 
-.recipe {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: center;
-  margin: 10%;
-}
-
 .scene {
   font-size: 0;
 }

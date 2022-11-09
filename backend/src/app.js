@@ -2,9 +2,8 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
-const cheeseRoutes = require("./cheeseRoutes.js");
-const recipesRoutes = require("./recipesRoutes.js");
-
+const cheeseRoutes = require("./cheeseRoutes.jsx");
+const recipesRoutes = require("./recipesRoutes.jsx");
 
 const app = express();
 

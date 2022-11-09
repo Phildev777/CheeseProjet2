@@ -3,29 +3,6 @@
   margin: 0;
 }
 
-.recipe {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 10%;
-}
-
-.scene {
-  font-size: 0;
-}
-
-.scene {
-  width: 300px;
-  height: 260px;
-
-  margin: 40px 0;
-  perspective: 600px;
-}
-
 .card {
   width: 100%;
   height: 100%;
@@ -33,21 +10,23 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  display: flex;
 }
 
 .card.is-flipped {
-  transform: rotateY(180deg) rotateX(360deg);
+  transform: rotateY(180deg) rotateX(360deg) scale(0.5);
+  position: fixed;
+  top: 10%;
+  bottom: 5%;
+  z-index: 1;
+  right: 3%;
 }
 
 .card__face {
   position: absolute;
   width: 100%;
   height: 100%;
-  line-height: 260px;
-  color: white;
 
-  font-weight: bold;
-  font-size: 40px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -62,9 +41,76 @@
 .card__face--front {
   background-image: url("../src/assets/imageRecette.jpg");
   background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .card__face--back {
-  background: #080808;
+  /*background-image: url("../src/assets/test_carte_recette.png");*/
   transform: rotateY(180deg);
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150%;
+  height: 150%;
+  border-radius: 40px 2px 40px 2px;
+  right: -20%;
+  top: -40%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 800px;
+}
+
+.Rcards {
+  border: 2px solid red;
+
+  width: 200px;
+  height: 250px;
+}
+
+.CtRecette {
+  border: 4px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30%;
+}
+
+#CtReverse {
+  border: 5px solid yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 600px;
+  margin-top: 200px;
+  width: 50%;
+}
+
+.CtBack {
+  color: aliceblue;
+
+  font-size: x-large;
+}
+
+.PhRecette {
+  /*width: 300px;
+    margin-left: 70%;
+    padding: 20px;*/
+  width: 337.32px;
+  height: 447.44px;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 26px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: 4px solid green;
+}
+
+#Charact1 {
+  border: 3px solid purple;
+  padding-bottom: 50%;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style/nav.css";
-import cheeseLogo from "../assets/cheeseLogo.png";
 import HomeLink from "./HomeLink";
 import CheeseLink from "./CheeseLink";
 import RecipeLink from "./RecipeLink";
@@ -11,6 +10,7 @@ import iconeCuisine from "../assets/iconeCuisine.png";
 import iconeAccueilSelected from "../assets/iconeAccueilSelected.png";
 import iconeFromageSelected from "../assets/iconeFromageSelected.png";
 import iconeCuisineSelected from "../assets/iconeCuisineSelected.png";
+import logo1 from "../assets/logo1.svg";
 
 function Nav() {
   const [isCheeseOn, setIsCheeseOn] = React.useState(false);
@@ -53,7 +53,7 @@ function Nav() {
       <nav className="navbarDesktop">
         <div className="logo">
           <a href="/" className="desktopHome">
-            <img src={cheeseLogo} alt="logo" className="logoImg" />
+            <img src={logo1} alt="logo" className="logoImg" />
           </a>
         </div>
         <ul className="desktopLinks">

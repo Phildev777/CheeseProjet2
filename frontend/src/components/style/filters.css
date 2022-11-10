@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.showFilters,
+.applyFilters,
+.closeFilters {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 4px;
+  box-shadow: 0 0 6px 2px #212121;
+  margin: 16px auto;
+}
+
+.showFilters {
+  font-size: 1.5rem;
+}
+
+.closeFilters {
+  margin: 0 8px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+.clearFilters {
+  font-size: 1.2rem;
+  padding: 4px;
+  border: 1px solid #212121;
+  margin: 15px auto;
+  color: #212121;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px 1px #212121;
+  width: fit-content;
+}
+
+.applyFilters {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.allGrey {
+  z-index: 12;
+  background-color: #21212188;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.filters {
+  width: 260px;
+  height: 100vh;
+  font-family: "Alice", serif;
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10vh 2vh;
+  opacity: 1;
+  box-shadow: -2px 0 6px 1px #212121;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 4px;
+  padding: 1vh;
+}
+
+.filter h4 {
+  padding: 1vh 0;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputContainer label {
+  margin: 4px 1vh;
+  padding: 1vh;
+}
+
+.inputContainer input {
+  -webkit-appearance: none;
+  appearance: none;
+  color: #212121;
+  width: 1.3em;
+  height: 1.3em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(1em);
+}
+
+.inputContainer input:checked {
+  color: #212121;
+  border: 0.15em solid currentColor;
+  background-color: #212121;
+  background: radial-gradient(ellipse at center, #a8a8a8 0%, #212121 100%);
+}

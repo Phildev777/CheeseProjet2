@@ -1,4 +1,5 @@
 import React from "react";
+import MobileTitle from "@components/MobileTitle";
 import Carousel from "../components/Carousel";
 import "../components/style/home.css";
 import Staff from "../components/Staff";
@@ -7,11 +8,11 @@ import Formulaire from "../components/Formulaire";
 function Home() {
   return (
     <div className="homepage">
-      <h1 className="header">Fromiton</h1>
+      <MobileTitle />
       <Carousel />
-      <p className="texthome">Qui sommes nous ?</p>
+      <h3 className="texthome">Qui sommes nous ?</h3>
       <Staff />
-      <p className="texthome">Nous conacter</p>
+      <h3 className="texthome">Nous contacter</h3>
       <p className="textcontact">
         Nous nous tenons à votre disposition pour toute suggestion ou demande de
         conseil.

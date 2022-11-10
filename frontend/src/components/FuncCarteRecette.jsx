@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import MapCarteRecette from "./MapCarteRecette";
-// import "./style/recettes.css";
+import "./style/recettes.css";
 
 export default function Recettes() {
   const [recipe, setRecipe] = useState([]);

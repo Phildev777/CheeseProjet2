@@ -23,6 +23,7 @@
 
 .formId {
   display: flex;
+
   flex-direction: row;
   gap: 10%;
   max-width: 100%;

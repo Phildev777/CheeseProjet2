@@ -13,7 +13,7 @@ function Home() {
       <Staff />
       <p className="texthome">Nous conacter</p>
       <p className="textcontact">
-        Nous nous tenons à votre disposition pout toute suggestion ou demande de
+        Nous nous tenons à votre disposition pour toute suggestion ou demande de
         conseil.
       </p>
       <p className="textcontact">

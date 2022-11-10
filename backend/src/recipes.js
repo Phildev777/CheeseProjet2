@@ -1,4 +1,4 @@
-module.exports.recettes = [
+const recettes = [
   {
     id: 1,
     recipeName: "Tartiflette",
@@ -100,3 +100,5 @@ module.exports.recettes = [
     recipeLink: "https://www.youtube.com/watch?v=YHbmAQudp3s",
   },
 ];
+
+module.exports = recettes;

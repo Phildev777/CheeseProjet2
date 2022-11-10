@@ -16,6 +16,7 @@ function Nav() {
   const [isCheeseOn, setIsCheeseOn] = React.useState(false);
   const [isRecipeOn, setIsRecipeOn] = React.useState(false);
   const [isHomeOn, setIsHomeOn] = React.useState(true);
+
   const cheeseOn = () => {
     setIsCheeseOn(true);
     setIsRecipeOn(false);

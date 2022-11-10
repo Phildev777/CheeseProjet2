@@ -1,32 +1,217 @@
 * {
-  margin: 0;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap%27");
 
-.Card {
+.mapfromage {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 17%;
-}
-
-.images {
-  border-radius: 50%;
+  justify-content: space-around;
+  margin: 20%;
 }
 
 .carte {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin: 30px;
-  padding: 30px;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  transition: 1s;
+  margin: 20px;
+  transform-style: preserve-3d;
+  z-index: 0;
+  position: relative;
 }
 
-.carte:hover {
-  border-radius: 3%;
-  transform: scale(1.1);
+.carte.is-flipped1 {
+  transform: rotateY(180deg) scale(1.15);
+  z-index: 1;
+}
+
+.carte__face {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.carte__face--front:hover {
+  font-family: "Playfair Display";
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
+  border-radius: 17px;
+  border: 1px solid black;
   transition: 0.3s;
-  box-shadow: 1px 1px 5px 5px rgba(179, 179, 179, 0.443);
+}
+
+.carte__face--front {
+  background-size: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
+  border-radius: 17px;
+}
+
+.carte__face--back {
+  background: rgb(36, 35, 35);
+  transform: rotateY(180deg);
+  border: 1px solid rgb(255, 238, 5);
+  border-radius: 2px 40px 2px 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.carte__face--back h2 {
+  background-color: aliceblue;
+  border-radius: 10px 2px 10px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 80%;
+  margin-left: 20%;
+  width: 60%;
+  height: 5%;
+}
+
+.carte__face--back h3 {
+  background-color: aliceblue;
+  border-radius: 2px 10px 2px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+  margin-top: 10%;
+  margin-left: 20%;
+  width: 60%;
+  height: 5%;
+}
+
+.carte__face--back p {
+  background-color: aliceblue;
+  border-radius: 10px 2px 10px 2px;
+  display: block;
+  justify-content: center;
+  padding: 2%;
+  font-size: 70%;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.carte__face--back h1 {
+  color: gold;
+  font-family: "Alice", serif;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carte__face--front h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Alice", serif;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.limage img {
+  height: 100px;
+  width: 100px;
+  float: bottom;
+  margin-left: 35%;
+  margin-top: -60px;
+  margin-right: 5%;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 238, 5);
+}
+
+.image1 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 9%;
+}
+
+@media screen and (min-width: 600px) {
+  .carte.is-flipped1 {
+    transform: rotateY(180deg) scale(2);
+    z-index: 1;
+  }
+
+  .carte__face--front {
+    background-size: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    box-shadow: none;
+    border-radius: none;
+  }
+
+  .carte__face--back h2 {
+    background-color: aliceblue;
+    border-radius: 10px 2px 10px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 80%;
+    margin-left: 30%;
+    width: 60%;
+    height: 5%;
+  }
+
+  .carte__face--back h3 {
+    background-color: aliceblue;
+    border-radius: 2px 10px 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 60%;
+    height: 5%;
+  }
+
+  .carte__face--back p {
+    background-color: aliceblue;
+    border-radius: 10px 2px 10px 2px;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    font-size: 70%;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .carte__face--back h1 {
+    color: gold;
+    font-family: "Alice", serif;
+    font-size: 100%;
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+  }
+
+  .carte__face--front h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Alice", serif;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .limage img {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 238, 5);
+  }
 }

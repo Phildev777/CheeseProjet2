@@ -6,6 +6,16 @@
 }
 
 .Head {
+  background-image: url("thumb-1920-286338.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Head {
   height: 35vh;
   position: relative;
 }

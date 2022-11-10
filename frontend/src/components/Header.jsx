@@ -1,4 +1,5 @@
 import React from "react";
+
 import Proptypes from "prop-types";
 import "./style/header.css";
 import MobileTitle from "@components/MobileTitle";
@@ -18,8 +19,10 @@ function Header({ pageName, imageUrl }) {
     </div>
   );
 }
+
 Header.propTypes = {
   imageUrl: Proptypes.string.isRequired,
   pageName: Proptypes.string.isRequired,
 };
+
 export default Header;

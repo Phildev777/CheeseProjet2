@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./style/recettes.css";
 
 export default function Recettes() {
   const [isFlipped, setIsFlipped] = useState(true);

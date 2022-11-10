@@ -30,6 +30,7 @@ function Carousel() {
         setShowArrow(true);
       }
     });
+    // return () => window.removeEventListener("scroll");
   }, []);
   return (
     <div className="FPCarousel">

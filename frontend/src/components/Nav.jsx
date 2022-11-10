@@ -52,9 +52,9 @@ function Nav() {
       </nav>
       <nav className="navbarDesktop">
         <div className="logo">
-          <a href="/" className="desktopHome">
+          <Link to="/Home" className="desktopHome">
             <img src={logo1} alt="logo" className="logoImg" />
-          </a>
+          </Link>
         </div>
         <ul className="desktopLinks">
           <li className="desktopLi">
@@ -68,7 +68,11 @@ function Nav() {
             </Link>
           </li>
           <li className="desktopLi">
-            <Link to="/" className="desktopLink">
+            <Link
+              to="/Home"
+              className="desktopLink"
+              state={{ goTo: "contact" }}
+            >
               Nous Contacter
             </Link>
           </li>

@@ -225,7 +225,7 @@ module.exports.cheeses = [
     fromageName: "Bethmale",
     fromageImage:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wikicheese_-_Bethmale_-_20150417_-_001.jpg/390px-Wikicheese_-_Bethmale_-_20150417_-_001.jpg",
-    typeDeLait: "vache, chèvre ou brebis cru",
+    typeDeLait: "vache cru",
     typeDePate: "pressée non cuite",
     origine: "Pyrénées ariégeoises",
     description:

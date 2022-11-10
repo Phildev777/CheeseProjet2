@@ -33,8 +33,21 @@
   align-self: flex-end;
 }
 
+.clearFilters {
+  font-size: 1.2rem;
+  padding: 4px;
+  border: 1px solid #212121;
+  margin: 15px auto;
+  color: #212121;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px 1px #212121;
+  width: fit-content;
+}
+
 .applyFilters {
   font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .allGrey {

@@ -14,7 +14,7 @@
 }
 
 .card.is-flipped {
-  transform: rotateY(180deg) rotateX(360deg) scale(0.5);
+  transform: rotateY(180deg) scale(0.5);
   position: fixed;
   top: 10%;
   bottom: 5%;
@@ -39,40 +39,35 @@
 }
 
 .card__face--front {
-  background-image: url("../src/assets/imageRecette.jpg");
+  display: flex;
+  justify-content: center;
   background-size: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  overflow: hidden;
 }
 
 .card__face--back {
   /*background-image: url("../src/assets/test_carte_recette.png");*/
   transform: rotateY(180deg);
-  background-color: #000000;
+  background-color: #212121;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 150%;
+  width: 120%;
   height: 150%;
   border-radius: 40px 2px 40px 2px;
-  right: -20%;
+  right: -10%;
   top: -40%;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 800px;
 }
 
 .Rcards {
-  border: 2px solid red;
-
   width: 200px;
   height: 250px;
 }
 
 .CtRecette {
-  border: 4px solid green;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -82,35 +77,107 @@
 }
 
 #CtReverse {
-  border: 5px solid yellow;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-right: 600px;
+  gap: 60px;
+  margin-right: 5px;
+  margin-right: -500px;
   margin-top: 200px;
   width: 50%;
+  font-family: "Playfair Display";
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .CtBack {
-  color: aliceblue;
+  font-size: 48px;
+  margin-right: 200px;
 
-  font-size: x-large;
+  text-align: center;
 }
 
 .PhRecette {
+  height: 100%;
+}
+
+/*.PhRecette {
   /*width: 300px;
     margin-left: 70%;
-    padding: 20px;*/
+    padding: 20px;
   width: 337.32px;
-  height: 447.44px;
+
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
   border-radius: 26px;
   margin-right: 20px;
   margin-top: 20px;
-  border: 4px solid green;
+
+}*/
+.PhFront {
+  display: block;
+}
+
+.PhRecetteBack {
+  display: flex;
+  width: 20%;
+
+  height: 447px;
+  width: 337;
+  margin-right: 40px;
+  float: right;
 }
 
 #Charact1 {
-  border: 3px solid purple;
-  padding-bottom: 50%;
+  font-family: "Playfair Display";
+  font-size: 78px;
+  color: #ffd369;
+  text-align: center;
+  width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+a:hover {
+  color: #ffd369;
+  -webkit-text-stroke: 2px #212121;
+}
+
+#Charact2 {
+  margin-left: 200px;
+  font-family: "Playfair Display";
+  height: 62px;
+  border-radius: 2px 20px 2px 20px;
+  width: 1000px;
+  background-color: #d9d9d9;
+  color: #212121;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+#Charact3 {
+  margin-left: 200px;
+  font-family: "Playfair Display";
+  height: 62px;
+  border-radius: 20px 2px 20px 2px;
+  width: 1000px;
+  background-color: #d9d9d9;
+  color: #212121;
+  margin-bottom: 40px;
+}
+
+#Charact4 {
+  margin-top: 300px;
+  font-family: "Playfair Display";
+  height: 62px;
+  border-radius: 2px 20px 2px 20px;
+  height: 385px;
+  background-color: #d9d9d9;
+  width: 1200px;
+  color: #212121;
+  font-size: 52px;
+  margin-left: 400px;
+}
+
+.Rname {
+  font-family: "Playfair Display";
 }

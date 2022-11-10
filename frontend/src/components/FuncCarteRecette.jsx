@@ -1,41 +1,31 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import MapCarteRecette from "./MapCarteRecette";
 import "./style/recettes.css";
 
 export default function Recettes() {
-  const data = [
-    {
-      title: "recette 1",
-      description: "toto",
-    },
-    {
-      title: "recette 2",
-      description: "tot",
-    },
-    {
-      title: "recette 3",
-      description: "to",
-    },
-    {
-      title: "recette 4 ",
-      description: "t",
-    },
-    {
-      title: "recette 5 ",
-      description: "t",
-    },
-    {
-      title: "recette 6",
-      description: "t",
-    },
-  ];
+  const [recipe, setRecipe] = useState([]);
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      const result = await axios("http://localhost:5000/api/recipe");
+
+      setRecipe(result.data);
+    };
+    fetchRecipe();
+  }, []);
 
   return (
     <div>
       <div className="CtRecette">
-        {data.map((dat) => {
+        {recipe.map((dat) => {
           return (
-            <MapCarteRecette title={dat.title} description={dat.decription} />
+            <MapCarteRecette
+              recipeName={dat.recipeName}
+              recipeImg={dat.recipeImg}
+              cheeseUsed={dat.cheeseUsed}
+              ingredients={dat.ingredients}
+              recipeLink={dat.recipelink}
+            />
           );
         })}
       </div>

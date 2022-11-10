@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./style/recettes.css";
+// import "./style/recettes.css";
 
 function AppelApi() {
   const [recipe, setRecipe] = useState([]);

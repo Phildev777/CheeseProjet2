@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style/recettes.css";
+// import "./style/recettes.css";
 import Proptypes from "prop-types";
 
 // similaire à "ComponentDidMount" et "componentDidUpdate";

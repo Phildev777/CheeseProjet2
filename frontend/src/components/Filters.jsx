@@ -61,17 +61,18 @@ function Filter() {
         "Tomme des Pyrénées est une dénomination protégée par Indication géographique protégée (IGP) désignant un fromage au lait de vache cru et pasteurisé fabriqué dans les Pyrénées françaises.",
     },
   ]);
+
+  const [areFiltersVisible, setAreFiltersVisible] = React.useState(false);
+
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/cheese")
       .then((response) => response.data)
       .then((data) => {
-        // console.log(data.cheeses);
-        setCheeses(data.cheeses);
+        setCheeses(data);
       });
-  }, []);
+  }, [areFiltersVisible]);
 
-  const [areFiltersVisible, setAreFiltersVisible] = React.useState(false);
   const [cowChecked, setCowChecked] = React.useState(false);
   const [goatChecked, setGoatChecked] = React.useState(false);
   const [sheepChecked, setSheepChecked] = React.useState(false);

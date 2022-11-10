@@ -529,4 +529,4 @@ const cheeses = [
   },
 ];
 
-module.export = cheeses;
+module.exports = cheeses;

@@ -15,13 +15,10 @@ function Header({ pageName, imageUrl }) {
           className="backgroundHead"
         />
         <h2>{pageName}</h2>
-
       </header>
     </div>
   );
 }
-
-
 
 Header.propTypes = {
   imageUrl: Proptypes.string.isRequired,

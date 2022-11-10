@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Proptypes from "prop-types";
 import "./style/fromages.css";
+import img from "./thumb-1920-286338.jpg";
 
-function MapCarteFromage({ title, description }) {
+function MapCarteFromage({ title, description, typeDePate, typeDeLait }) {
   const handleKeyPressed = () => {};
 
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -16,10 +17,20 @@ function MapCarteFromage({ title, description }) {
         onKeyDown={handleKeyPressed}
       >
         <div className="carte__face carte__face--front">
-          <p>{description}</p>
+          <div className="image1">
+            <img src={img} alt="zdc" />
+          </div>
+          <h1>{title}</h1>
         </div>
+
         <div className="carte__face carte__face--back">
-          <p>{title}</p>
+          <div className="limage">
+            <img src={img} alt="zdc" />
+          </div>
+          <h1>{title}</h1>
+          <h2>Type de Lait : {typeDeLait}</h2>
+          <h3>Type de Pâte : {typeDePate}</h3>
+          <p>{description}</p>
         </div>
       </div>
     </div>
@@ -30,5 +41,7 @@ export default MapCarteFromage;
 
 MapCarteFromage.propTypes = {
   title: Proptypes.string.isRequired,
+  typeDePate: Proptypes.string.isRequired,
+  typeDeLait: Proptypes.string.isRequired,
   description: Proptypes.string.isRequired,
 };

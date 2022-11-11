@@ -10,7 +10,7 @@ import iconeCuisine from "../assets/iconeCuisine.png";
 import iconeAccueilSelected from "../assets/iconeAccueilSelected.png";
 import iconeFromageSelected from "../assets/iconeFromageSelected.png";
 import iconeCuisineSelected from "../assets/iconeCuisineSelected.png";
-import logo1 from "../assets/logo1.svg";
+import logo1 from "../assets/logo1.png";
 
 function Nav() {
   const [isCheeseOn, setIsCheeseOn] = React.useState(false);
@@ -53,7 +53,7 @@ function Nav() {
       </nav>
       <nav className="navbarDesktop">
         <div className="logo">
-          <Link to="/Home" className="desktopHome">
+          <Link to="/" className="desktopHome">
             <img src={logo1} alt="logo" className="logoImg" />
           </Link>
         </div>
@@ -69,11 +69,7 @@ function Nav() {
             </Link>
           </li>
           <li className="desktopLi">
-            <Link
-              to="/Home"
-              className="desktopLink"
-              state={{ goTo: "contact" }}
-            >
+            <Link to="/" className="desktopLink" state={{ goTo: "contact" }}>
               Nous Contacter
             </Link>
           </li>

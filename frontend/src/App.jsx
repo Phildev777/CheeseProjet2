@@ -21,7 +21,7 @@ function App() {
         <Wrapper>
           <Nav />
           <Routes>
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route exact path="/Fromages" element={<Fromages />} />
             <Route exact path="/Recettes" element={<Recettes />} />
           </Routes>

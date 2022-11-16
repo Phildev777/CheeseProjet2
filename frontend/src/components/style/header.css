@@ -13,9 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.Head {
   height: 35vh;
   position: relative;
 }
@@ -49,4 +46,14 @@
   font-family: "Cinzel", serif;
   font-weight: lighter;
   font-size: 1.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .mobileTitle {
+    display: none;
+  }
+
+  .Head {
+    margin-top: 7vh;
+  }
 }

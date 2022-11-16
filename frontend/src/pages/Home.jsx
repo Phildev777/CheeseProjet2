@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import MobileTitle from "@components/MobileTitle";
 import Carousel from "../components/Carousel";
 import "../components/style/home.css";
 import Staff from "../components/Staff";
@@ -17,7 +16,6 @@ function Home() {
 
   return (
     <div className="homepage">
-      <MobileTitle />
       <Carousel />
       <h3 className="texthome">Qui sommes nous ?</h3>
       <Staff />

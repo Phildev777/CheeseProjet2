@@ -16,12 +16,13 @@
   background-color: #212121;
   color: #ffffff;
   padding: 4px;
-  box-shadow: 0 0 6px 2px #212121;
+  box-shadow: 9px 6px 15px -5px #2121218f;
   margin: 16px auto;
 }
 
 .showFilters {
   font-size: 1.5rem;
+  margin: 5%;
 }
 
 .closeFilters {

@@ -31,7 +31,6 @@
 }
 
 .card__face--front:hover {
-
   font-family: "Playfair Display";
   box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
   border-radius: 17px;

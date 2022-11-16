@@ -7,7 +7,9 @@ export default function Fromages() {
   const [recipe, setRecipe] = useState([]);
   useEffect(() => {
     const fetchRecipe = async () => {
-      const result = await axios("http://localhost:5006/api/cheese");
+      const result = await axios(
+        `${import.meta.env.VITE_BACKEND_URL}/api/cheese`
+      );
 
       setRecipe(result.data);
     };

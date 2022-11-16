@@ -5,19 +5,8 @@
   margin: 0;
 }
 
-.btn {
-  height: 50px;
-  width: 50px;
-  font-size: 240%;
-  background-color: rgba(0, 0, 0, 0.429);
-  display: flex;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 85%;
-  left: 95%;
-}
+
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap%27");
 
 .mapfromage {
   display: flex;

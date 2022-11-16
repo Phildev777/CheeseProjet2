@@ -7,6 +7,10 @@
   margin: calc((93vh - clamp(252px, 70vh, 380px) - 180px) / 2);
 }
 
+.carouselDesktop {
+  display: none;
+}
+
 .FPCarousel {
   height: 93vh;
   background: linear-gradient(
@@ -28,16 +32,16 @@
   text-align: center;
   font-family: "Cinzel", serif;
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 7vw, 5rem);
 }
 
 .slide {
-  width: clamp(252px, 70vw, 380px);
-  height: clamp(252px, 70vw, 380px);
+  width: clamp(252px, 70vw, 375px);
+  height: clamp(252px, 70vw, 375px);
   border-radius: 50%;
   border: 1px solid #ffd369;
   transition-duration: 0.5s;
-  margin: 1.5% 0 2.5% 0;
+  margin: 10vw 0;
 }
 
 .buttonnext,
@@ -69,7 +73,7 @@
   height: 65px;
   width: 65px;
   position: fixed;
-  top: 90vh;
+  top: 80vh;
   margin: 0;
   animation-name: slideDown;
   animation-duration: 1s;
@@ -80,5 +84,29 @@
 @media screen and (min-width: 800px) {
   .FPCarousel {
     margin-top: 7vh;
+  }
+
+  .scrollDown {
+    top: 90vh;
+  }
+
+  .slide {
+    margin: 0;
+    display: none;
+  }
+
+  .buttonnext,
+  .buttonprev {
+    display: none;
+  }
+
+  .carouselDesktop {
+    display: initial;
+    height: clamp(252px, 70vw, 375px);
+  }
+
+  .containerimage {
+    margin: 0;
+    padding: 0;
   }
 }

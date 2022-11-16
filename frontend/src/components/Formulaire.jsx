@@ -15,7 +15,7 @@ function Formulaire() {
   };
 
   return (
-    <div>
+    <div className="formGlobal">
       <form className="formContainer">
         <div className="formId">
           <label htmlFor="nom">
@@ -66,7 +66,7 @@ function Formulaire() {
           Cheese !
         </button>
       </form>
-      <Popup trigger={btnPopup} setTrigger={setBtnPopup} />
+      <Popup trigger={btnPopup} setTrigger={setBtnPopup} prenom={`${prenom}`} />
     </div>
   );
 }

@@ -26,7 +26,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -79,8 +78,10 @@
   position: absolute;
   top: 10;
   bottom: 0;
+
   padding: 2%;
   border: 4px solid #ffd369;
+
   border-radius: 40px 2px 40px 2px;
   width: 1224px;
   height: 1064px;

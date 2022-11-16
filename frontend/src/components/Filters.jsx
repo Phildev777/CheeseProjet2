@@ -66,7 +66,7 @@ function Filter() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/cheese")
+      .get("http://localhost:5006/api/cheese")
       .then((response) => response.data)
       .then((data) => {
         setCheeses(data);

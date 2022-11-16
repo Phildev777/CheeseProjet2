@@ -7,6 +7,10 @@
   margin: calc((93vh - clamp(252px, 70vh, 380px) - 180px) / 2);
 }
 
+.carouselDesktop {
+  display: none;
+}
+
 .FPCarousel {
   height: 93vh;
   background: linear-gradient(
@@ -88,5 +92,21 @@
 
   .slide {
     margin: 0;
+    display: none;
+  }
+
+  .buttonnext,
+  .buttonprev {
+    display: none;
+  }
+
+  .carouselDesktop {
+    display: initial;
+    height: clamp(252px, 70vw, 375px);
+  }
+
+  .containerimage {
+    margin: 0;
+    padding: 0;
   }
 }

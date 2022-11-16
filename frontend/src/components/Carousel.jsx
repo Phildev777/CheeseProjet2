@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import img1 from "../assets/img/img1.jpeg";
 import img2 from "../assets/img/img2.jpeg";
 import img3 from "../assets/img/img3.jpeg";
+import CarouselDesktop from "./CarouselDesktop";
 import "./style/Carousel.css";
 
 function Carousel() {
@@ -35,10 +36,12 @@ function Carousel() {
   return (
     <div className="FPCarousel">
       <h1 className="FPTitle">Les FrenCheese</h1>
+
       <div className="containerimage">
         <button className="buttonprev" type="button" onClick={changePrev}>
           &#10096;
         </button>
+        <CarouselDesktop />
         {picture === 1 && (
           <img className="slide" src={img1} alt="slide Cheese" />
         )}

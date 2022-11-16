@@ -23,17 +23,23 @@
 }
 
 .card__face {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.card__face:hover {
+.card__face--front:hover {
+
   font-family: "Playfair Display";
   box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
   border-radius: 17px;
+  transition: 0.3s;
+}
+
+.card__face--front .RecipeName:hover {
+  opacity: 1;
   transition: 0.3s;
 }
 
@@ -41,10 +47,28 @@
   display: flex;
   justify-content: center;
   background-size: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   overflow: hidden;
+  border-radius: 20px 2px 20px 2px;
+}
+
+.card__face--front .RecipeName {
+  font-size: 28px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: "Playfair Display";
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding-top: 10%;
+  color: white;
+  opacity: 0;
+  text-shadow: 5px 1px 3px black;
 }
 
 .card__face--back {
@@ -52,13 +76,16 @@
   transform: rotateY(180deg);
   background-color: #212121;
   position: absolute;
-  top: 0;
+  top: 10;
   bottom: 0;
-  width: 100%;
+
+  padding: 2%;
+  border: 4px solid #ffd369;
 
   border-radius: 40px 2px 40px 2px;
-  right: -10%;
-  top: -40%;
+  width: 1224px;
+  height: 1064px;
+  margin-left: 300px;
 }
 
 .Rcards {
@@ -69,10 +96,11 @@
 .CtRecette {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
 }
 
 #CtReverse {
@@ -88,8 +116,9 @@
 
 .CtBack {
   font-size: 48px;
-  margin-right: 200px;
 
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -97,28 +126,12 @@
   height: 100%;
 }
 
-/*.PhRecette {
-  /*width: 300px;
-    margin-left: 70%;
-    padding: 20px;
-  width: 337.32px;
-
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
-  border-radius: 26px;
-  margin-right: 20px;
-  margin-top: 20px;
-
-}*/
-.PhFront {
-  display: block;
-}
-
 .PhRecetteBack {
   display: flex;
-  width: 20%;
-
+  width: 40%;
+  margin-left: 100px;
   height: 447px;
-  width: 337;
+
   margin-right: 40px;
   float: right;
 }
@@ -129,24 +142,27 @@
   color: #ffd369;
   text-align: center;
   width: 1000px;
+  display: flex;
 }
 
-a {
+a,
+.liensRecipe {
   text-decoration: none;
   color: #212121;
 }
 
-a:hover {
+a:hover,
+.liensRecipe:hover {
   color: #ffd369;
   -webkit-text-stroke: 2px #212121;
 }
 
 #Charact2 {
-  margin-left: 200px;
+  margin-left: 50px;
   font-family: "Playfair Display";
-  height: 62px;
+  height: 190px;
   border-radius: 2px 20px 2px 20px;
-  width: 1000px;
+  justify-content: center;
   background-color: #d9d9d9;
   color: #212121;
   margin-bottom: 40px;
@@ -154,29 +170,79 @@ a:hover {
 }
 
 #Charact3 {
-  margin-left: 200px;
+  margin-left: 50px;
   font-family: "Playfair Display";
   height: 62px;
   border-radius: 20px 2px 20px 2px;
-  width: 1000px;
+
   background-color: #d9d9d9;
   color: #212121;
   margin-bottom: 40px;
 }
 
 #Charact4 {
-  margin-top: 300px;
+  margin-top: 100px;
   font-family: "Playfair Display";
-  height: 62px;
   border-radius: 2px 20px 2px 20px;
-  height: 385px;
+  height: 100%;
   background-color: #d9d9d9;
-  width: 1200px;
+  margin-right: 100px;
   color: #212121;
-  font-size: 52px;
-  margin-left: 400px;
+  font-size: 350;
+  margin-left: 100px;
 }
 
 .Rname {
   font-family: "Playfair Display";
+}
+
+@media screen and (max-width: 800px) {
+  .PhRecetteBack {
+    margin-right: 10%;
+    margin-top: -400px;
+    position: relative;
+    width: 80%;
+    box-shadow: 1px 1px 8px 7px rgba(0, 0, 0, 0.69);
+  }
+
+  #Charact1 {
+    visibility: hidden;
+  }
+
+  #Charact4 {
+    font-size: 55px;
+    margin-top: 10%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #Charact2 {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 55px;
+  }
+
+  #Charact3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+  }
+
+  .card__face--front .RecipeName {
+    font-size: 30px;
+    top: 10%;
+  }
+
+  .card__face--back {
+    margin-left: -150px;
+    width: 900px;
+    height: 1400px;
+    top: -350px;
+  }
+
+  .liensRecipe {
+    font-size: 50px;
+  }
 }

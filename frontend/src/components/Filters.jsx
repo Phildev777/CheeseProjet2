@@ -66,7 +66,7 @@ function Filter() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5006/api/cheese")
+      .get(`${import.meta.env.VITE_BACKEND_URL}/api/cheese`)
       .then((response) => response.data)
       .then((data) => {
         setCheeses(data);

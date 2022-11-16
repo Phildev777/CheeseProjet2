@@ -1,10 +1,11 @@
 import React from "react";
 import DataHome from "./DataHome";
 import DataHomeBase from "./DataHomeBase";
+import "./style/home.css";
 
 function Staff() {
   return (
-    <div>
+    <div className="staff">
       {DataHome.map((character) => (
         <DataHomeBase
           key={character.id}

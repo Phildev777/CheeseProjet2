@@ -2,11 +2,11 @@ import React from "react";
 import "./style/Popup.css";
 import Proptypes from "prop-types";
 
-function Popup({ trigger, setTrigger }) {
+function Popup({ trigger, setTrigger, prenom }) {
   return trigger ? (
     <div className="popup">
       <div className="popup-inner">
-        <p className="popup-title">Un grand merci</p>
+        <p className="popup-title">Merci {prenom}</p>
         <h3 className="popup-diag">
           Votre message nous a été livré sur un plateau, nous allons le déguster
           avec gourmandise.{" "}
@@ -16,9 +16,8 @@ function Popup({ trigger, setTrigger }) {
           type="button"
           onClick={() => setTrigger(false)}
         >
-          Retour de site
+          Retour au site
         </button>
-        {/* {children} */}
       </div>
     </div>
   ) : (
@@ -29,6 +28,6 @@ function Popup({ trigger, setTrigger }) {
 Popup.propTypes = {
   trigger: Proptypes.bool.isRequired,
   setTrigger: Proptypes.func.isRequired,
-  // children: Proptypes.string.isRequired,
+  prenom: Proptypes.string.isRequired,
 };
 export default Popup;

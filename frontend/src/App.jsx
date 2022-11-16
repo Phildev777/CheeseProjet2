@@ -42,6 +42,7 @@ function Wrapper({ children }) {
   return <div>{children}</div>;
 }
 Wrapper.propTypes = {
-  children: Proptypes.func.isRequired,
+  children: Proptypes.array.isRequired,
 };
+
 export default App;

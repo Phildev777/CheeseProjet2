@@ -24,7 +24,7 @@ export default function Recettes() {
               recipeImg={dat.recipeImg}
               cheeseUsed={dat.cheeseUsed}
               ingredients={dat.ingredients}
-              recipeLink={dat.recipelink}
+              recipeLink={dat.recipeLink}
             />
           );
         })}

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap%27");
 
 .mapfromage {
@@ -134,7 +135,7 @@
   margin: 9%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .carte.is-flipped1 {
     transform: rotateY(180deg) scale(2);
     z-index: 1;

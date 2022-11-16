@@ -44,4 +44,5 @@ function Wrapper({ children }) {
 Wrapper.propTypes = {
   children: Proptypes.func.isRequired,
 };
+
 export default App;

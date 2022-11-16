@@ -14,7 +14,7 @@ function Fromages() {
       <Filters />
       <FuncFromage />
       <a href="/Fromages" className="btn">
-        <span>&#8613;</span>
+        <span c>&#8679;</span>
       </a>
     </div>
   );

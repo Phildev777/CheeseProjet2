@@ -6,17 +6,25 @@
 }
 
 .btn {
-  height: 50px;
-  width: 50px;
-  font-size: 240%;
-  background-color: rgba(0, 0, 0, 0.429);
+  height: 30px;
+  width: 30px;
+  font-size: 170%;
+  background-color: rgba(135, 135, 135, 0.764);
   display: flex;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 85%;
-  left: 95%;
+  top: 87%;
+  left: 90%;
+}
+
+span{
+  color: rgb(255, 255, 255);
+}
+
+span:hover{
+  color: rgb(0, 0, 0);
 }
 
 .mapfromage {
@@ -161,9 +169,11 @@
 .image1 img {
   width: 250px;
   height: 250px;
+  box-shadow: 9px 3px 9px 1px rgba(0, 0, 0, 0.342);
   border-radius: 50%;
   margin: 9%;
 }
+
 
 @media screen and (min-width: 800px) {
   .carte.is-flipped1 {
@@ -278,5 +288,19 @@
     margin-right: 5%;
     border-radius: 50%;
     border: 1px solid rgb(255, 238, 5);
+  }
+
+  .btn {
+    height: 40px;
+    width: 40px;
+    font-size: 170%;
+    background-color: rgba(135, 135, 135, 0.764);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 95%;
+    left: 95%;
   }
 }

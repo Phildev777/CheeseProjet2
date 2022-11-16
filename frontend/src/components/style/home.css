@@ -7,7 +7,6 @@
   font-size: 2.5rem;
   font-weight: lighter;
   text-align: center;
-
   margin-top: 4vh;
   text-shadow: 1px 1px 1px #212121;
 }
@@ -39,8 +38,8 @@
   font-size: 130%;
 }
 
-.decription {
-  color: #ffd369;
+.description {
+  color: #eeeeee;
   text-align: center;
   font-size: 90%;
   margin-bottom: 10%;
@@ -50,4 +49,110 @@
   text-align: center;
   margin: 2% 5% 0 5%;
   font-family: "Alice", serif;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .staff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content: center;
+  }
+
+  .character {
+    width: 47%;
+    margin: 1%;
+    font-size: 140%;
+    height: 400px;
+    padding: 1%;
+  }
+
+  .image {
+    width: 135px;
+    height: 135px;
+    margin: auto;
+  }
+
+  .name {
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin: 4% 5% 10% 5%;
+    border-radius: 5px;
+    padding: 2%;
+    text-shadow: 1px 1px 1px #212121;
+    font-size: 120%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 100%;
+    border-radius: 5px;
+    margin: 4% 5% 10% 5%;
+    color: #eeeeee;
+    height: 17%;
+    padding: 5% 2% 4% 2%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .texthome {
+    margin: 8%;
+  }
+
+  .staff {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .character {
+    width: 100%;
+    margin: 1%;
+    font-size: 140%;
+    height: 400px;
+    padding: 1%;
+  }
+
+  .image {
+    width: 135px;
+    height: 135px;
+    margin: auto;
+  }
+
+  .name {
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin: 4% 5% 10% 5%;
+    border-radius: 5px;
+    padding: 2%;
+    text-shadow: 1px 1px 1px #212121;
+    font-size: 110%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 90%;
+    border-radius: 5px;
+    margin: 4% 5% 10% 5%;
+    color: #eeeeee;
+    height: 17%;
+    padding: 5% 2% 4% 2%;
+  }
+
+  .texthome {
+    margin: 8% 0% 5% 0%;
+  }
+
+  .textcontact {
+    font-size: 120%;
+    margin-bottom: 3%;
+  }
 }

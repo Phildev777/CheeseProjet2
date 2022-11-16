@@ -23,46 +23,82 @@
 
 .formId {
   display: flex;
-
   flex-direction: row;
   gap: 10%;
-  max-width: 100%;
+  width: 100%;
 }
 
 #Nom,
 #Prénom {
-  background-color: #d9d9d9;
+  background-color: #eeeeee;
   width: 100%;
   border-radius: 0 6px 0 6px;
   padding: 3%;
   font-family: "Alice", serif;
   border: 1px solid #ffd369;
+  height: 40px;
 }
 
 .formMail {
-  background-color: #d9d9d9;
+  background-color: #eeeeee;
   border-radius: 0 6px 0 6px;
   padding: 3%;
   width: 100%;
   font-family: "Alice", serif;
   border: 1px solid #ffd369;
+  height: 40px;
 }
 
 .formMessage {
-  background-color: #d9d9d9;
+  background-color: #eeeeee;
   border-radius: 0 6px 0 6px;
   padding: 3%;
   height: 100px;
   width: 100%;
   font-family: "Alice", serif;
   border: 1px solid #ffd369;
+  resize: none;
 }
 
 .formButton {
-  background-color: #d9d9d9;
+  background-color: #eeeeee;
   width: 140px;
   height: 40px;
   border-radius: 10px;
   font-family: "Alice", serif;
   align-self: center;
+}
+
+@media screen and (min-width: 700px) {
+  .formGlobal {
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+  }
+
+  .formId {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .formId label {
+    width: 45%;
+  }
+
+  #Nom,
+  #Prénom {
+    width: 100%;
+  }
+
+  .formMessage {
+    height: 190px;
+  }
+
+  .formButton {
+    border-radius: 5px;
+    font-size: 120%;
+    margin: 5%;
+    padding: 2%;
+  }
 }

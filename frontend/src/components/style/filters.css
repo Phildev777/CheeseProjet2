@@ -7,7 +7,10 @@
 
 .buttonContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 16px auto;
 }
 
 .showFilters,
@@ -22,7 +25,11 @@
 
 .showFilters {
   font-size: 1.5rem;
-  margin: 5%;
+}
+
+.cancelButton span {
+  font-weight: bolder;
+  font-size: 1.5;
 }
 
 .closeFilters {
@@ -34,7 +41,8 @@
   align-self: flex-end;
 }
 
-.clearFilters {
+.clearFilters,
+.cancelButton {
   font-size: 1.2rem;
   padding: 4px;
   border: 1px solid #212121;
@@ -43,6 +51,7 @@
   background-color: #ffffff;
   box-shadow: 0 0 2px 1px #212121;
   width: fit-content;
+  height: 30px;
 }
 
 .applyFilters {

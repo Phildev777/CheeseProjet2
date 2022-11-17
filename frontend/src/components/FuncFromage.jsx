@@ -20,6 +20,7 @@ export default function Fromages() {
         {recipe.map((dat) => {
           return (
             <MapCarteFromage
+              key={dat.id}
               title={dat.fromageName}
               fromageImage={dat.fromageImage}
               origine={dat.origine}

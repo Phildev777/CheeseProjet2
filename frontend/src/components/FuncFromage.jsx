@@ -16,6 +16,7 @@ export default function Fromages() {
   //   };
   //   fetchRecipe();
   // }, []);
+  const [listOfCheeses, setListOfCheeses] = useState([]);
   const [cheeses, setCheeses] = useState([]);
 
   const [areFiltersVisible, setAreFiltersVisible] = React.useState(false);
@@ -25,6 +26,7 @@ export default function Fromages() {
       .get(`${import.meta.env.VITE_BACKEND_URL}/api/cheese`)
       .then((response) => response.data)
       .then((data) => {
+        setListOfCheeses(data);
         setCheeses(data);
       })
       .catch((err) => console.warn(err));
@@ -36,6 +38,7 @@ export default function Fromages() {
   const [softChecked, setSoftChecked] = React.useState(false);
   const [hardChecked, setHardChecked] = React.useState(false);
   const [blueChecked, setBlueChecked] = React.useState(false);
+  const [cancelButton, setCancelButton] = React.useState(false);
   const applyFilters = () => {
     let filteredMilkCheeses = [];
     if (cowChecked) {
@@ -102,6 +105,18 @@ export default function Fromages() {
         >
           Voir les filtres
         </button>
+        {cancelButton && (
+          <button
+            className="cancelButton"
+            onClick={() => {
+              setCheeses(listOfCheeses);
+              setCancelButton(false);
+            }}
+            type="button"
+          >
+            <span>X </span>Voir tout
+          </button>
+        )}
       </div>
       {areFiltersVisible && (
         <div className="allGrey">
@@ -184,6 +199,7 @@ export default function Fromages() {
                 className="applyFilters"
                 onClick={() => {
                   setAreFiltersVisible(!areFiltersVisible);
+                  setCancelButton(true);
                   applyFilters();
                   clearFilters();
                 }}
@@ -203,18 +219,24 @@ export default function Fromages() {
         </div>
       )}
       <div className="mapfromage">
-        {cheeses.map((dat) => {
-          return (
-            <MapCarteFromage
-              title={dat.fromageName}
-              fromageImage={dat.fromageImage}
-              origine={dat.origine}
-              description={dat.description}
-              typeDeLait={dat.typeDeLait}
-              typeDePate={dat.typeDePate}
-            />
-          );
-        })}
+        {cheeses
+          .sort((a, b) => {
+            if (a.fromageName < b.fromageName) return -1;
+            if (a.fromageName > b.fromageName) return 1;
+            return 0;
+          })
+          .map((dat) => {
+            return (
+              <MapCarteFromage
+                title={dat.fromageName}
+                fromageImage={dat.fromageImage}
+                origine={dat.origine}
+                description={dat.description}
+                typeDeLait={dat.typeDeLait}
+                typeDePate={dat.typeDePate}
+              />
+            );
+          })}
       </div>
     </div>
   );

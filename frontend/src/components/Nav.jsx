@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./style/nav.css";
 import HomeLink from "./HomeLink";
 import CheeseLink from "./CheeseLink";
@@ -16,37 +16,41 @@ function Nav() {
   const [isCheeseOn, setIsCheeseOn] = React.useState(false);
   const [isRecipeOn, setIsRecipeOn] = React.useState(false);
   const [isHomeOn, setIsHomeOn] = React.useState(true);
+  const { pathname } = useLocation();
 
-  const cheeseOn = () => {
-    setIsCheeseOn(true);
-    setIsRecipeOn(false);
-    setIsHomeOn(false);
+  const actualPage = () => {
+    if (pathname === "/Recettes") {
+      setIsHomeOn(false);
+      setIsCheeseOn(false);
+      setIsRecipeOn(true);
+    } else if (pathname === "/Fromages") {
+      setIsHomeOn(false);
+      setIsCheeseOn(true);
+      setIsRecipeOn(false);
+    } else {
+      setIsHomeOn(true);
+      setIsCheeseOn(false);
+      setIsRecipeOn(false);
+    }
   };
-  const recipeOn = () => {
-    setIsHomeOn(false);
-    setIsCheeseOn(false);
-    setIsRecipeOn(true);
-  };
-  const homeOn = () => {
-    setIsRecipeOn(false);
-    setIsCheeseOn(false);
-    setIsHomeOn(true);
-  };
+  useEffect(() => {
+    actualPage();
+  });
   return (
     <div className="navbar">
       <nav className="navbarMobile">
         <ul className="listNav">
           <CheeseLink
-            cheeseOn={cheeseOn}
+            // cheeseOn={cheeseOn}
             cheeseURL={isCheeseOn ? iconeFromageSelected : iconeFromage}
           />
           <HomeLink
-            homeOn={homeOn}
+            // homeOn={homeOn}
             homeURL={isHomeOn ? iconeAccueilSelected : iconeAccueil}
             homeClass={isHomeOn ? "linkNav selected" : "linkNav"}
           />
           <RecipeLink
-            recipeOn={recipeOn}
+            // recipeOn={recipeOn}
             recipeURL={isRecipeOn ? iconeCuisineSelected : iconeCuisine}
           />
         </ul>

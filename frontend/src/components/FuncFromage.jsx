@@ -5,20 +5,8 @@ import "./style/fromages.css";
 import "./style/filters.css";
 
 export default function Fromages() {
-  // const [recipe, setRecipe] = useState([]);
-  // useEffect(() => {
-  //   const fetchRecipe = async () => {
-  //     const result = await axios(
-  //       `${import.meta.env.VITE_BACKEND_URL}/api/cheese`
-  //     );
-
-  //     setRecipe(result.data);
-  //   };
-  //   fetchRecipe();
-  // }, []);
   const [listOfCheeses, setListOfCheeses] = useState([]);
   const [cheeses, setCheeses] = useState([]);
-
   const [areFiltersVisible, setAreFiltersVisible] = React.useState(false);
 
   useEffect(() => {
@@ -85,7 +73,6 @@ export default function Fromages() {
       filteredCheeses = filteredMilkCheeses;
     }
     setCheeses(filteredCheeses);
-    console.warn(filteredCheeses);
   };
   const clearFilters = () => {
     setCowChecked(false);

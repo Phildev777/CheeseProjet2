@@ -1,15 +1,9 @@
-.controle {
-  display: grid;
-  grid: 2rem / repeat(2, 1fr);
-  place-items: center;
-}
-
 .contenu-carousel {
-  margin: calc((93vh - clamp(252px, 70vh, 380px) - 180px) / 2);
-  width: clamp(252px, 70vw, 375px);
-  height: clamp(252px, 70vw, 375px);
+  margin-top: calc((93vh - clamp(252px, 50vh, 380px) - 180px) / 2);
+  width: clamp(252px, 50vh, 375px);
+  height: clamp(252px, 50vh, 375px);
   position: relative;
-  perspective: 1000px;
+  perspective: 95vw;
 }
 
 .images-carousel {
@@ -29,8 +23,8 @@
   backface-visibility: hidden;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
   position: absolute;
-  width: clamp(252px, 70vw, 375px);
-  height: clamp(252px, 70vw, 375px);
+  width: clamp(252px, 50vh, 375px);
+  height: clamp(252px, 50vh, 375px);
   border-radius: 50%;
   outline: 1px solid transparent;
 }
@@ -98,7 +92,7 @@
 
   30% {
     transform: translateX(70%) scale(0.7);
-    opacity: 0.7;
+    opacity: 1;
     visibility: visible;
     z-index: 3;
   }
@@ -112,7 +106,7 @@
 
   60% {
     transform: translateX(-70%) scale(0.7);
-    opacity: 0.7;
+    opacity: 1;
     visibility: visible;
     z-index: 3;
   }

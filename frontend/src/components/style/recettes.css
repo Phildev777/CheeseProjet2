@@ -144,13 +144,11 @@
   display: flex;
 }
 
-a,
 .liensRecipe {
   text-decoration: none;
   color: #212121;
 }
 
-a:hover,
 .liensRecipe:hover {
   color: #ffd369;
   -webkit-text-stroke: 2px #212121;

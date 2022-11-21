@@ -2,10 +2,10 @@ import React from "react";
 import Proptypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function HomeLink({ homeURL, homeOn }) {
+function HomeLink({ homeURL }) {
   return (
     <li className="itemsNav">
-      <Link to="/" className="linkNav" onClick={homeOn}>
+      <Link to="/" className="linkNav">
         <img src={homeURL} alt="Accueil" className="iconeNav" />
       </Link>
     </li>
@@ -13,6 +13,5 @@ function HomeLink({ homeURL, homeOn }) {
 }
 HomeLink.propTypes = {
   homeURL: Proptypes.string.isRequired,
-  homeOn: Proptypes.func.isRequired,
 };
 export default HomeLink;

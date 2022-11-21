@@ -22,6 +22,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  box-shadow: 0 -1px 6px #090909;
 }
 
 .navbarDesktop {
@@ -66,7 +67,7 @@
     align-items: center;
     height: 7vh;
     background-color: #080808;
-    width: 100%;
+    width: 100vw;
     padding: 4px 0 4px 4px;
     position: fixed;
     top: 0;
@@ -99,19 +100,17 @@
     text-decoration: none;
     color: #ffc83c;
     font-family: "Cinzel";
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     height: 100%;
     width: 100%;
     transition: 0.4s;
     margin: 0;
+    padding: 2px 4px;
+    border-radius: 1px 10px 1px 10px;
   }
 
   .desktopLink:hover {
-    background-color: #ffc83c;
-    color: #080808;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 1px 10px 1px 10px;
-    padding: 4px;
+    /* background-color: #ffc83c; */
+    border: 1px solid #ffc83c;
   }
 }

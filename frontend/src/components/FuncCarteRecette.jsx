@@ -7,7 +7,7 @@ export default function Recettes() {
   const [recipe, setRecipe] = useState([]);
   useEffect(() => {
     const fetchRecipe = async () => {
-      const result = await axios("http://localhost:5000/api/recipe");
+      const result = await axios(`${import.meta.env.VITE_BACKEND_URL}/api/recipe`);
 
       setRecipe(result.data);
     };

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function CarouselDesktop() {
   const [images, setImages] = useState([]);
   const callApi = () => {
-    axios.get(`http://localhost:5000/api/cheese`).then((res) => {
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/cheese`).then((res) => {
       const calledImages = [];
       res.data
         .filter((element) => element.fromageImage.includes("lorho"))

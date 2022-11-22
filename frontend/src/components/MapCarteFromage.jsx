@@ -15,7 +15,7 @@ function MapCarteFromage({
   const [isFlipped1, setIsFlipped1] = useState(false);
 
   return (
-    <div>
+    <div className="laCarte">
       <div
         aria-hidden="true"
         className={`carte ${isFlipped1 && "is-flipped1"}`}
@@ -34,8 +34,11 @@ function MapCarteFromage({
             <img src={fromageImage} alt="test" />
           </div>
           <h1>{title}</h1>
+
           <h2>Type de Lait : {typeDeLait}</h2>
+
           <h3>Type de Pâte : {typeDePate}</h3>
+
           <h4>Origine : {origine}</h4>
           <p>{description}</p>
         </div>

@@ -5,42 +5,25 @@
   margin: 0;
 }
 
-.btn {
-  height: 30px;
-  width: 30px;
-  font-size: 170%;
-  background-color: rgba(135, 135, 135, 0.764);
-  display: flex;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 87%;
-  left: 90%;
-}
-
-span{
-  color: rgb(255, 255, 255);
-}
-
-span:hover{
-  color: rgb(0, 0, 0);
+.LaCarte {
+  margin: 20%;
 }
 
 .mapfromage {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 17%;
-  margin-right: 17%;
+  margin-left: 19%;
+  margin-right: 19%;
   margin-top: 25%;
 }
 
 .carte {
-  width: 300px;
-  height: 350px;
+  width: 37vh;
+  height: 45vh;
+  margin-left: 50px;
+  margin-right: 50px;
   transition: transform 1s;
-  margin: 20px;
   margin-bottom: 30%;
   transform-style: preserve-3d;
   position: relative;
@@ -68,35 +51,41 @@ span:hover{
 }
 
 .carte__face--front {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   background-size: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
-  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.32);
   border-radius: 17px;
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 40px 2px 40px 2px;
 }
 
 .carte__face--back {
-  background: rgb(36, 35, 35);
+  background: #212121;
   transform: rotateY(180deg);
-  border: 1px solid rgba(255, 238, 5, 0.755);
+  border: 1px solid #ffd369;
   border-radius: 2px 40px 2px 40px;
   width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
+  font-size: 1.2vh;
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.322);
 }
 
 .carte__face--back h2 {
   background-color: aliceblue;
-  border-radius: 10px 2px 10px 2px;
+  border-radius: 2px 10px 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.4vh;
   margin-top: 10%;
-  font-size: 80%;
   margin-left: 10%;
   width: 80%;
   height: 5%;
@@ -104,12 +93,11 @@ span:hover{
 
 .carte__face--back h3 {
   background-color: aliceblue;
-  border-radius: 2px 10px 2px 10px;
+  border-radius: 10px 10px 2px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 10%;
   width: 80%;
   height: 5%;
@@ -121,7 +109,6 @@ span:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80%;
   margin-top: 5%;
   margin-left: 10%;
   width: 80%;
@@ -130,20 +117,20 @@ span:hover{
 
 .carte__face--back p {
   background-color: aliceblue;
-  border-radius: 10px 2px 10px 2px;
+  border-radius: 2px 10px 2px 10px;
   display: block;
   justify-content: center;
   padding: 2%;
-  font-size: 70%;
+  font-size: 1.4vh;
   margin-top: 5%;
   margin-left: 3%;
   margin-right: 3%;
 }
 
 .carte__face--back h1 {
-  color: rgb(255, 217, 0);
+  color: #ffd369;
   font-family: "Alice", serif;
-  font-size: 100%;
+  font-size: 1.4vh;
   display: flex;
   justify-content: center;
 }
@@ -159,25 +146,24 @@ span:hover{
 .limage img {
   height: 100px;
   width: 100px;
+  margin-top: -20%;
   margin-left: 35%;
-  margin-top: -75px;
-  margin-right: 5%;
   border-radius: 50%;
-  border: 1px solid rgba(255, 238, 5, 0.868);
+  border: 1px solid #FFD369(255, 238, 5, 0.868);
 }
 
 .image1 img {
-  width: 250px;
-  height: 250px;
+  width: 30vh;
+  height: 30vh;
+  margin-top: 10%;
+  margin-bottom: 10%;
   box-shadow: 9px 3px 9px 1px rgba(0, 0, 0, 0.342);
   border-radius: 50%;
-  margin: 9%;
 }
-
 
 @media screen and (min-width: 800px) {
   .carte.is-flipped1 {
-    transform: rotateY(180deg) scale(2);
+    transform: rotateY(180deg) scale(1.8);
 
     z-index: 1;
   }
@@ -186,13 +172,17 @@ span:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 17%;
-    margin-right: 17%;
+    margin-left: 9%;
+    margin-right: 9%;
     margin-top: 0%;
   }
 
   .carte__face--front {
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 0;
     bottom: 0;
@@ -211,14 +201,26 @@ span:hover{
     border-radius: none;
   }
 
+  .carte__face--back {
+    background: #212121;
+    transform: rotateY(180deg);
+    border: 1px solid #FFD369(255, 238, 5, 0.755);
+    border-radius: 2px 20px 2px 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 1.2vh;
+  }
+
   .carte__face--back h2 {
     background-color: aliceblue;
-    border-radius: 10px 2px 10px 2px;
+    border-radius: 2px;
     display: flex;
+    font-size: 1.4vh;
     justify-content: center;
     align-items: center;
     margin-top: 4%;
-    font-size: 70%;
     margin-left: 30%;
     width: 60%;
     height: 5%;
@@ -226,11 +228,10 @@ span:hover{
 
   .carte__face--back h3 {
     background-color: aliceblue;
-    border-radius: 2px 10px 2px 10px;
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70%;
     margin-top: 2%;
     margin-left: 30%;
     width: 60%;
@@ -239,11 +240,10 @@ span:hover{
 
   .carte__face--back h4 {
     background-color: aliceblue;
-    border-radius: 2px 10px 2px 10px;
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70%;
     margin-top: 5%;
     margin-left: 10%;
     width: 80%;
@@ -252,21 +252,22 @@ span:hover{
 
   .carte__face--back p {
     background-color: aliceblue;
-    border-radius: 10px 2px 10px 2px;
+    border-radius: 2px 10px 2px 10px;
     display: flex;
     justify-content: center;
+    font-size: none;
     padding: 2%;
-    font-size: 70%;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 3%;
     margin-right: 3%;
   }
 
   .carte__face--back h1 {
-    color: gold;
+    color: #ffd369;
     font-family: "Alice", serif;
     font-size: 100%;
     display: flex;
+    font-size: 160%;
     margin: 3%;
     justify-content: center;
   }
@@ -275,32 +276,18 @@ span:hover{
     color: rgb(0, 0, 0);
     font-family: "Alice", serif;
     font-size: 100%;
+    font-size: 2vh;
     display: flex;
     justify-content: center;
   }
 
   .limage img {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     float: left;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-top: 3%;
     border-radius: 50%;
-    border: 1px solid rgb(255, 238, 5);
-  }
-
-  .btn {
-    height: 40px;
-    width: 40px;
-    font-size: 170%;
-    background-color: rgba(135, 135, 135, 0.764);
-    display: flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 95%;
-    left: 95%;
+    border: 1px solid #ffd369;
   }
 }

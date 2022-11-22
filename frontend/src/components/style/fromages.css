@@ -80,7 +80,7 @@
 
 .carte__face--back h2 {
   background-color: aliceblue;
-  border-radius: 2px 10px 10px 10px;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@
 
 .carte__face--back h3 {
   background-color: aliceblue;
-  border-radius: 10px 10px 2px 10px;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +105,7 @@
 
 .carte__face--back h4 {
   background-color: aliceblue;
-  border-radius: 2px 10px 2px 10px;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;

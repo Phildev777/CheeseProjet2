@@ -7,7 +7,7 @@ function DataHomeBase({ image, name, description }) {
     <div className="character">
       <img className="image" src={image} alt="avatar" />
       <h2 className="name">{name}</h2>
-      <h2 className="description">{description}</h2>
+      <p className="description">{description}</p>
     </div>
   );
 }

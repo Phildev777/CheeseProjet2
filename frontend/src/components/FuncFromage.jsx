@@ -206,6 +206,7 @@ export default function Fromages() {
         </div>
       )}
       <div className="mapfromage">
+
         {cheeses
           .sort((a, b) => {
             if (a.fromageName < b.fromageName) return -1;
@@ -224,6 +225,7 @@ export default function Fromages() {
               />
             );
           })}
+
       </div>
     </div>
   );

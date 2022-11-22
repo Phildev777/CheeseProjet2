@@ -29,14 +29,15 @@ function MapCarteRecette({
           onKeyDown={() => handleKeyPressed()}
         >
           <div className="card__face card__face--front">
-            <p className="PhFront">
-              <img className="PhRecette" src={recipeImg} alt="test" />
-            </p>
+            <img className="PhRecette" src={recipeImg} alt="test" />
+            <div className="RecipeName">
+              <h3>{recipeName}</h3>
+            </div>
           </div>
 
           <div className="card__face card__face--back">
             {isFlipped && (
-              <p>
+              <p className="CarteMobile">
                 {" "}
                 <h3 className="CtBack" id="Charact1">
                   {recipeName}
@@ -45,13 +46,17 @@ function MapCarteRecette({
                   <img className="PhRecetteBack" src={recipeImg} alt="test" />
                 </p>
                 <p className="CtBack" id="Charact2">
-                  <a href="http://localhost:3000/Fromages">{cheeseUsed}</a>
+                  <a href="http://localhost:3000/Fromages">
+                    Fromage utilisé : {cheeseUsed}
+                  </a>
                 </p>
                 <p className="CtBack" id="Charact3">
-                  <a href={recipeLink}>videos</a>
+                  <a className="liensRecipe" href={recipeLink}>
+                    Vidéos
+                  </a>
                 </p>
                 <p className="CtBack" id="Charact4">
-                  {ingredients}
+                  Ingrédients :{ingredients}
                 </p>
               </p>
             )}

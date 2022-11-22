@@ -7,7 +7,7 @@ export default function Recettes() {
   const [recipe, setRecipe] = useState([]);
   useEffect(() => {
     const fetchRecipe = async () => {
-      const result = await axios("http://localhost:5006/api/recipe");
+      const result = await axios("http://localhost:5000/api/recipe");
 
       setRecipe(result.data);
     };
@@ -24,7 +24,7 @@ export default function Recettes() {
               recipeImg={dat.recipeImg}
               cheeseUsed={dat.cheeseUsed}
               ingredients={dat.ingredients}
-              recipeLink={dat.recipelink}
+              recipeLink={dat.recipeLink}
             />
           );
         })}

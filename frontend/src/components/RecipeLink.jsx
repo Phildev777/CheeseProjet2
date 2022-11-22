@@ -2,10 +2,10 @@ import React from "react";
 import Proptypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function RecipeLink({ recipeURL, recipeOn }) {
+function RecipeLink({ recipeURL }) {
   return (
     <li className="itemsNav">
-      <Link to="/Recettes" className="linkNav" onClick={recipeOn}>
+      <Link to="/Recettes" className="linkNav">
         <img src={recipeURL} alt="Les Recettes" className="iconeNav" />
       </Link>
     </li>
@@ -13,6 +13,5 @@ function RecipeLink({ recipeURL, recipeOn }) {
 }
 RecipeLink.propTypes = {
   recipeURL: Proptypes.string.isRequired,
-  recipeOn: Proptypes.func.isRequired,
 };
 export default RecipeLink;

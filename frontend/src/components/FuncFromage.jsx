@@ -215,10 +215,11 @@ export default function Fromages() {
           .map((dat) => {
             return (
               <MapCarteFromage
+                key={dat.id}
                 title={dat.fromageName}
                 fromageImage={dat.fromageImage}
                 origine={dat.origine}
-                description={dat.description}
+                description={dat.description || ""}
                 typeDeLait={dat.typeDeLait}
                 typeDePate={dat.typeDePate}
               />

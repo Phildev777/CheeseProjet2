@@ -47,8 +47,6 @@ function MapCarteFromage({
   );
 }
 
-export default MapCarteFromage;
-
 MapCarteFromage.propTypes = {
   title: Proptypes.string.isRequired,
   fromageImage: Proptypes.string.isRequired,
@@ -57,3 +55,5 @@ MapCarteFromage.propTypes = {
   typeDeLait: Proptypes.string.isRequired,
   description: Proptypes.string.isRequired,
 };
+
+export default MapCarteFromage;

@@ -16,7 +16,7 @@ const DataHome = [
     name: "Baptiste.A",
     image: b,
     description:
-      "Le cadet , passionné et de nature calme, refusant l'échec il sais rebondir de toutes situations.",
+      "Le cadet, passionné et de nature calme, refusant l'échec il sait rebondir de toutes situations.",
   },
   {
     id: 3,

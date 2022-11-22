@@ -26,12 +26,12 @@
   width: 12%;
   border-radius: 50%;
   border: 1px solid #ffd369;
-  margin: 4% 4% 1%;
+  margin: 3% 4% 1%;
 }
 
 .name {
   left: 25%;
-  margin: 2% 5% 0% 12%;
+  margin: 4% 5% 0% 12%;
   color: #ffd369;
   position: absolute;
   font-size: 120%;
@@ -41,8 +41,9 @@
   color: #eeeeee;
   text-align: center;
   font-size: 55%;
-  margin: 0 auto 3%;
+  margin: 0 auto 2%;
   width: 80%;
+  padding: 1%;
 }
 
 .textcontact {

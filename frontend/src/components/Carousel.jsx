@@ -8,7 +8,7 @@ function Carousel() {
   const [picture, setPicture] = useState(1);
   const [slide, setSlide] = useState([]);
   const carouselApi = () => {
-    axios.get(`http://localhost:5000/api/cheese`).then((res) => {
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/cheese`).then((res) => {
       const sliderData = [];
 
       res.data.map((element) => {

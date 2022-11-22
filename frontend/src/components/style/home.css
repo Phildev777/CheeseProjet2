@@ -4,10 +4,10 @@
 .texthome {
   color: #ffc83c;
   font-family: "Cinzel", serif;
-  font-size: 2.1rem;
+
+  font-size: clamp(1.5rem, 8vw, 3.5rem);
   font-weight: lighter;
   text-align: center;
-  margin: 2vh;
   text-shadow: 1px 1px 1px #212121;
 }
 
@@ -149,7 +149,7 @@
   }
 
   .texthome {
-    margin: auto;
+    margin: 4vh auto;
   }
 
   .textcontact {

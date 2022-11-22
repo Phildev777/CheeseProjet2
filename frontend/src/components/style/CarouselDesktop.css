@@ -1,15 +1,9 @@
-.controle {
-  display: grid;
-  grid: 2rem / repeat(2, 1fr);
-  place-items: center;
-}
-
 .contenu-carousel {
-  margin: calc((93vh - clamp(252px, 70vh, 380px) - 180px) / 2);
-  width: clamp(252px, 70vw, 375px);
-  height: clamp(252px, 70vw, 375px);
+  margin-top: calc((93vh - clamp(252px, 50vh, 380px) - 180px) / 2);
+  width: clamp(252px, 50vh, 375px);
+  height: clamp(252px, 50vh, 375px);
   position: relative;
-  perspective: 1000px;
+  perspective: 95vw;
 }
 
 .images-carousel {
@@ -29,8 +23,8 @@
   backface-visibility: hidden;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
   position: absolute;
-  width: clamp(252px, 70vw, 375px);
-  height: clamp(252px, 70vw, 375px);
+  width: clamp(252px, 50vh, 375px);
+  height: clamp(252px, 50vh, 375px);
   border-radius: 50%;
   outline: 1px solid transparent;
 }
@@ -42,35 +36,26 @@
 
 .images-carousel div:nth-child(1) {
   animation-delay: 0s;
-  background: url(../../assets/img/emmental-francais.jpg) no-repeat center
-    center/cover;
 }
 
 .images-carousel div:nth-child(2) {
   animation-delay: -4s;
-  background: url(../../assets/img/img2.jpeg) no-repeat center center/cover;
 }
 
 .images-carousel div:nth-child(3) {
   animation-delay: -8s;
-  background: url(../../assets/img/img3.jpeg) no-repeat center center/cover;
 }
 
 .images-carousel div:nth-child(4) {
   animation-delay: -12s;
-  background: url(../../assets/img/crottin-de-chavignol.jpg) no-repeat center
-    center/cover;
 }
 
 .images-carousel div:nth-child(5) {
   animation-delay: -16s;
-  background: url(../../assets/img/img1.jpeg) no-repeat center center/cover;
 }
 
 .images-carousel div:nth-child(6) {
   animation-delay: -20s;
-  background: url(../../assets/img/mimolette-vielle.jpg) no-repeat center
-    center/cover;
 }
 
 @keyframes carousel-animate {
@@ -98,7 +83,7 @@
 
   30% {
     transform: translateX(70%) scale(0.7);
-    opacity: 0.7;
+    opacity: 1;
     visibility: visible;
     z-index: 3;
   }
@@ -112,7 +97,7 @@
 
   60% {
     transform: translateX(-70%) scale(0.7);
-    opacity: 0.7;
+    opacity: 1;
     visibility: visible;
     z-index: 3;
   }

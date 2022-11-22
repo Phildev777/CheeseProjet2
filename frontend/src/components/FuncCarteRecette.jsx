@@ -5,12 +5,14 @@ import "./style/recettes.css";
 
 export default function Recettes() {
   const [recipe, setRecipe] = useState([]);
+
   useEffect(() => {
     const fetchRecipe = async () => {
       const result = await axios("http://localhost:5000/api/recipe");
 
       setRecipe(result.data);
     };
+
     fetchRecipe();
   }, []);
 
@@ -20,6 +22,7 @@ export default function Recettes() {
         {recipe.map((dat) => {
           return (
             <MapCarteRecette
+              key={dat.id}
               recipeName={dat.recipeName}
               recipeImg={dat.recipeImg}
               cheeseUsed={dat.cheeseUsed}

@@ -16,7 +16,7 @@ const recettes = [
       "https://media.istockphoto.com/photos/raclette-cheese-melted-picture-id627586092?k=20&m=627586092&s=612x612&w=0&h=VSx_Op6QIDDYytciewAWrXU4QwEDPHeI3kDlm1q5s-Y=",
     cheeseUsed: "Raclette",
     ingredients:
-      "pommes de terre, charcuterie (jambon cuit, rosette, bacon, grison, mortadelle, coppa, chorizo etc...), condiments(oignons rouges ou blancs, câpres, cornochons), crudités(salade verte, tomates, champignons)",
+      "pommes de terre, charcuterie, condiments(oignons rouges, câpres, cornichons), crudités",
     recipeLink: "https://www.youtube.com/watch?v=tujeaRX4UVM",
   },
   {
@@ -71,7 +71,7 @@ const recettes = [
   },
   {
     id: 8,
-    recipeName: "Makis de bresaola, roquette et sainte-maure",
+    recipeName: "Makis au fromage",
     recipeImg:
       "https://www.lidl-recettes.fr/var/site/storage/images/4/8/3/9/89384-3-fre-FR/Maki-carpaccio.jpg",
     cheeseUsed: "Sainte-Maure de Touraine",
@@ -86,7 +86,7 @@ const recettes = [
       "https://img.cuisineaz.com/660x660/2013/12/20/i93080-escalope-de-veau-cordon-bleu.jpeg",
     cheeseUsed: "Emmental ou Comté",
     ingredients:
-      "4 blancs de poulet, 2 tranches de jambon, 4 tranches de comté ou emmental, 5 c.à.s. de farine, 2 œufs, 5 c.à.s. de panure, 25 g de beurre, 4 c.à.s. d’huile d’olive, sel et poivre. ",
+      "4 blcs de poulet, 2 tr de jambon, 4 tr de comté ou emmental, 5 c.à.s. de farine, 2 œufs, 5 c.à.s. de panure, 25 g de beurre, 4 c.à.s. d’huile d’olive, sel poivre. ",
     recipeLink: "https://www.youtube.com/watch?v=rXBHISRMkH0",
   },
   {
@@ -96,7 +96,7 @@ const recettes = [
       "https://www.fromage-aop-bleu-auvergne.com/wp-content/uploads/2020/01/burger-bleu-auvergne.jpg",
     cheeseUsed: "Bleu",
     ingredients:
-      "2 pain à burger, 500 gr de viande de bœuf hachée, 100 gr de lardon fumé, 100 gr de bleu, 125 gr de crème fraîche, ketchup, moutarde douce, cornichons, sel et poivre.",
+      "2 pains burger, 500 gr de bœuf haché, 100 gr de lardons, 100 gr de bleu, 125 gr de crème fraîche, ketchup, moutarde, cornichons, sel poivre.",
     recipeLink: "https://www.youtube.com/watch?v=YHbmAQudp3s",
   },
 ];

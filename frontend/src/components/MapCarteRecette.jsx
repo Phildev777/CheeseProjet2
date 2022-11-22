@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./style/recettes.css";
 import Proptypes from "prop-types";
+import { Link } from "react-router-dom";
 
 // similaire à "ComponentDidMount" et "componentDidUpdate";
 
@@ -15,13 +16,14 @@ function MapCarteRecette({
 
   const handleKeyPressed = () => {};
 
+  const handleNewTab = (event) => {
+    event.stopPropagation();
+    window.open(recipeLink, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div>
       <div className="Rcards">
-        <div className="title">
-          <p />
-        </div>
-
         <div
           aria-hidden="true"
           className={`card  ${isFlipped && "is-flipped"}`}
@@ -30,35 +32,47 @@ function MapCarteRecette({
         >
           <div className="card__face card__face--front">
             <img className="PhRecette" src={recipeImg} alt="test" />
-            <div className="RecipeName">
-              <h3>{recipeName}</h3>
+
+            <div
+              className="RecipeName"
+              style={{ display: isFlipped ? "none" : "block" }}
+            >
+              <h3 className="NameFront">{recipeName}</h3>
             </div>
           </div>
 
           <div className="card__face card__face--back">
             {isFlipped && (
-              <p className="CarteMobile">
-                {" "}
+              <div>
                 <h3 className="CtBack" id="Charact1">
                   {recipeName}
                 </h3>
-                <p>
+
+                <div>
                   <img className="PhRecetteBack" src={recipeImg} alt="test" />
-                </p>
-                <p className="CtBack" id="Charact2">
-                  <a href="http://localhost:3000/Fromages">
-                    Fromage utilisé : {cheeseUsed}
-                  </a>
-                </p>
-                <p className="CtBack" id="Charact3">
-                  <a className="liensRecipe" href={recipeLink}>
-                    Vidéos
-                  </a>
-                </p>
-                <p className="CtBack" id="Charact4">
-                  Ingrédients :{ingredients}
-                </p>
-              </p>
+                </div>
+
+                <div className="CtBack" id="Charact2">
+                  <Link to="/Fromages" className="lien">
+                    Fromage utilisé : <br />
+                    {cheeseUsed}
+                  </Link>
+                </div>
+
+                <div className="CtBack" id="Charact3">
+                  <button
+                    type="button"
+                    className="liensRecipe"
+                    onClick={handleNewTab}
+                  >
+                    <h2 className="Etapes">Etapes de la recette en vidéo</h2>
+                  </button>
+                </div>
+
+                <div className="CtBack" id="Charact4">
+                  <p>Ingrédients : {ingredients}</p>
+                </div>
+              </div>
             )}
           </div>
         </div>

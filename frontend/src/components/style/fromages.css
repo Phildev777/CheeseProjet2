@@ -5,13 +5,9 @@
   margin: 0;
 }
 
-
 .LaCarte {
   margin: 20%;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap%27");
-
 
 .mapfromage {
   display: flex;
@@ -21,17 +17,13 @@
   margin-left: 19%;
   margin-right: 19%;
   margin-top: 25%;
-
-
 }
 
 .carte {
   width: 37vh;
   height: 45vh;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0 auto 30%;
   transition: transform 1s;
-  margin-bottom: 30%;
   transform-style: preserve-3d;
   position: relative;
 }

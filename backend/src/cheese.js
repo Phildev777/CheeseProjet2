@@ -117,7 +117,7 @@ const cheeses = [
     typeDeLait: "vache",
     typeDePate: "persillée",
     origine: "Ain",
-    decription:
+    description:
       "Le bleu de Gex Haut-Jura ou bleu de Septmoncel est un fromage au lait de vache à pâte persillée produit dans les plateaux du Haut-Jura, à cheval sur les départements de l'Ain et du Jura en France. Son appellation d'origine est préservée via le label AOC, depuis le 20 septembre 1977, et AOP depuis le 25 septembre 2008. C'est un bleu doux. Le mot « Gex » est imprimé en relief sur la croûte. Les moines de l'abbaye de Saint-Claude le fabriquaient déjà au xiiie siècle. Sa meilleure période de consommation s'étend de juin à février.",
   },
   {
@@ -281,7 +281,7 @@ const cheeses = [
     typeDeLait: "vache pasteurisé",
     typeDePate: "pressée non cuite",
     origine: "Haute-Savoie",
-    decription:
+    description:
       "C'est un fromage à base de lait de vache pasteurisé au goût fruité et fumé. La particularité de sa fabrication réside dans une exposition à un feu de bois de hêtre qui lui donne une texture fondante et une croûte brune-orange. Il possède une pâte pressée non cuite de couleur blanc à ivoire. Ce fromage à pâte demi-ferme, contient 48 % de matière grasse. Il se présente sous la forme d'une meule d'environ 6kg.",
   },
   {
@@ -292,7 +292,7 @@ const cheeses = [
     typeDeLait: "vache cru ou pasteurisé",
     typeDePate: "pressée non cuite",
     origine: "Cantal",
-    decription:
+    description:
       "Le lait caillé et pressé s'appelle la tomme de cantal. Cette tome une fois brisée et salée, est mise en moule, et de nouveau pressée. C'est ainsi que sont réalisées les fourmes de Cantal. Son goût et son aspect changent en foncion de l'affinage : cantal jeune (1 à 2 mois d'affinage), entre-deux (3 à 7 mois), ou vieux (plus de 8 mois). Sa meilleure période de consommation s'étend de mai à janvier.",
   },
   {
@@ -303,7 +303,7 @@ const cheeses = [
     typeDeLait: "vache pasteurisé",
     typeDePate: "molle à croûte fleurie",
     origine: "Haute-Marne",
-    decription:
+    description:
       "Créé dans les années 1950, Caprice des dieux devient le premier fromage ovale dans un univers constitué de produits traditionnels ronds (camemberts, coulommiers) ou carrés. Par sa douceur et son équilibre, Caprice des Dieux est un fromage crémeux qui s’adresse à toutes les générations. Fabriqué à partir de lait pasteurisé enrichi de crème, il présente une texture soyeuse, fondante à coeur. Avec son goût pur et frais de crème fraiche, il est adapté à toutes les occasions : du petit moment de plaisir au petit creux. En cuisine, il apporte une sensation de fraîcheur à l'apéritif ou dans une salade. ",
   },
   {
@@ -314,7 +314,7 @@ const cheeses = [
     typeDeLait: "vache cru",
     typeDePate: "molle à croûte fleurie",
     origine: "Pas-de-Calais",
-    decription:
+    description:
       "Ch'ti Crémeux, également appelé Ch'ti Crémeux de Rety, est une marque commerciale désignant un fromage fermier français fabriqué dans la commune de Réty, département du Pas-de-Calais.",
   },
   {
@@ -325,7 +325,7 @@ const cheeses = [
     typeDeLait: "vache cru",
     typeDePate: "molle à croûte fleurie",
     origine: "Aube",
-    decription:
+    description:
       "Sa pâte, salée au sel sec, est onctueuse, souple et assez ferme à la fois. Il a la particularité de présenter un affinage centripète faisant ressortir au fil du temps le contraste entre son pourtour crémeux et la texture fine et légèrement granuleuse du coeur. Son nom provient du village de Chaource dans l'Aube qui est l'épicentre de son émergence historique. Sa meilleure période de consommation s'étend de juillet à novembre.",
   },
   {
@@ -335,7 +335,7 @@ const cheeses = [
     typeDeLait: "vache cru",
     typeDePate: "pressée cuite",
     origine: "Jura",
-    decription:
+    description:
       "Le Comté se caractérise par son étonnante richesse aromatique. Ce n’est pas un fromage à goût uniforme. Chaque meule de Comté révèle un profil aromatique différent selon sa micro-région d’origine, sa saison, selon le tour de main particulier du maître fromager, selon la cave où elle a été élevée. Les vaches de races Montbéliarde et Simmental françaises sont les seules autorisées pour la production du lait à Comté. Chaque jour, le Comté est élaboré artisanalement dans environ 140 fromageries de village, aussi appelées « fruitières ». Ensuite c’est une question de temps ! Chaque meule de Comté doit passer au minimum 4 mois en cave d’affinage avant d’être proposée aux gourmands.",
   },
   {
@@ -346,7 +346,7 @@ const cheeses = [
     typeDeLait: "vache cru ou pasteurisé",
     typeDePate: "molle, non pressée et non cuite",
     origine: "Seine-et-Marne",
-    decription:
+    description:
       "Aussi appelé Brie de Coulommiers, il est plus petit et plus épais que le brie de Meaux par exemple. Son goût est dû à la qualité du lait — un lait riche en crème, emprésuré dès la traite — et est un peu plus prononcé que celui du brie de Meaux et avec une pointe d'amertume, mais plus doux que le brie de Melun. Sa meilleure période de consommation s'étend d'octobre à fin mars",
   },
   {
@@ -357,7 +357,7 @@ const cheeses = [
     typeDeLait: "vache pasteurisé",
     typeDePate: "pressée non cuite",
     origine: "Sarthe",
-    decription:
+    description:
       "Cousteron est une marque commerciale appartenant au groupe Bel, apposée sur un fromage industriel de lait de vache pasteurisé fabriqué dans deux usines fromagères, une dans la commune de Sablé, dans le département de la Sarthe et l'autre dans la commune de Cléry-le-Petit dans le département de la Meuse, en France.",
   },
   {
@@ -368,7 +368,7 @@ const cheeses = [
     typeDeLait: "brebis pasteurisé",
     typeDePate: "pressée non cuite",
     origine: "Pyrénées-Atlantique",
-    decription:
+    description:
       "En basque, Etorki signifie « origine ». Le fromage Etorki a été créé en 1979 avec la volonté d'offrir aux consommateurs un « pur brebis » fin, subtil, séducteur, sans les accents piquants qui caractérisaient parfois les fromages venus de la montagne. Il se présente sous la forme d'une petite meule affinée environ 7 semaines. Sa pâte, ferme au toucher mais tendre sous la dent, libère des arômes pointus et très rafraîchissants du lait des brebis pyrénéennes.",
   },
   {
@@ -379,7 +379,7 @@ const cheeses = [
     typeDeLait: "vache cru ou pasteurisé",
     typeDePate: "persillée à croûte fleurie",
     origine: "Auvergne",
-    decription:
+    description:
       "C'est un fromage à base de lait de vache, à pâte persillée, non cuite et non pressée, à croûte sèche et fleurie, se présentant sous la forme d'un cylindre. Possède une texture souple et onctueuse, d’une grande douceur et des arômes délicats de sous-bois. Affinage minimum de 28 jours.",
   },
   {
@@ -390,7 +390,7 @@ const cheeses = [
     typeDeLait: "vache cru ou pasteurisé",
     typeDePate: "molle à croûte lavée",
     origine: "Haute-Marne",
-    decription:
+    description:
       "Fromage d'une saveur particulièrement caratéristique, d'une force agréable mais sans outrance. Apparenté à l'Epoisses et au Munster, et produit surtout en petite laiterie, le fromage Langres est la spécialité de la Champagne humide. Son nom vient du principal centre de commercialisation du fromage, dans le département de la Haute-Marne. Le fromage Langres se caractérise par sa forme tronçonique marquée d'une dépression central. Sa meilleure période de consommation s'étend de mai à décembre",
   },
   {
@@ -401,7 +401,7 @@ const cheeses = [
     typeDeLait: "brebis pasteurisé",
     typeDePate: "molle à croûte naturelle",
     origine: "Béarn",
-    decription:
+    description:
       "Cette marque désigne des élaborations fromagères à base de laits de brebis mélangés entre eux et pasteurisés. La pâte est molle à croûte naturelle. La croûte prend une couleur blanche à la suite d'un affinage rapide de 2 semaines. Ces fromages se caractérisent par un goût unique et une texture crémeuse.",
   },
   {
@@ -412,7 +412,7 @@ const cheeses = [
     typeDeLait: "vache cru",
     typeDePate: "molle à croûte lavée",
     origine: "Loire-Atlantique",
-    decription:
+    description:
       "Sa recette aurait été transmise au XIXe siècle à Saint-Julien-de-Concelles dans le vignoble nantais par un curé de passage. Il est aujourd’hui fabriqué à Pornic, à l’ouest de Nantes. À l'origine carré, le fromage Le Curé Nantais, également appelé fromage à curé, fromage du curé ou le fromage nantais, existe aussi sous une forme ronde. Fromage fort, sa pâte est souple et percée de quelques petits trous, elle révèle une saveur de lard fumé et un final épicé.",
   },
   {
@@ -423,7 +423,7 @@ const cheeses = [
     typeDeLait: "vache pasteurisé",
     typeDePate: "molle à croûte lavée",
     origine: "Côte-d'Or",
-    decription:
+    description:
       "C'est un fromage à pâte molle à croûte lavée, moulé dans une petite taille (environ 60 grammes), affiné avec du marc de Bourgogne durant environ 3 semaines d’affinage. Il dégage une odeur et un goût puissants avec d’arrières notes florales surprenantes.",
   },
   {
@@ -434,7 +434,7 @@ const cheeses = [
     typeDeLait: "brebis cru",
     typeDePate: "molle à croûte légèrement fleurie",
     origine: "Lozère",
-    decription:
+    description:
       "Ce fromage a une pâte moelleuse et onctueuse avec une saveur très douce, peu salée, accompagnée d’un arôme de brebis, de paille et de lait chaud. Il a été inventé par la fromagerie Le Fédou de Hyelzas en 1992. La brique de brebis est aujourd’hui fabriquée par plusieurs fromageries fermières et industrielles, au lait cru ou pasteurisé. Il est affiné durant une dizaine de jours. Sa forme plate donne une présentation originale sur un plateau et facilite le service.",
   },
   {
@@ -445,7 +445,7 @@ const cheeses = [
     typeDeLait: "vache cru",
     typeDePate: "pressée non cuite",
     origine: "Nord-Pas-de-Calais",
-    decription:
+    description:
       "La mimolette, appelée aussi « boule de Lille » ou « vieux hollande », est un fromage traditionnellement produit en Flandre française d'où elle est originaire, dans la région de Lille. Ce fromage est une imitation du fromage d'édam fabriqué aux Pays-Bas, datant de 1672, lorsque les fromages de provenance étrangère étaient interdits par le mercantilisme sous Colbert. La mimolette a pris sa couleur orangée pour marquer la différence entre les fromages français et les fromages néerlandais. Sa meilleure période de consommation s'étend d'avril à septembre.",
   },
   {

@@ -43,7 +43,7 @@ function MapCarteRecette({
 
           <div className="card__face card__face--back">
             {isFlipped && (
-              <div>
+              <div className="backOfCard">
                 <h3 className="CtBack" id="Charact1">
                   {recipeName}
                 </h3>
@@ -65,7 +65,7 @@ function MapCarteRecette({
                     className="liensRecipe"
                     onClick={handleNewTab}
                   >
-                    <h2 className="Etapes">Etapes de la recette en vidéo</h2>
+                    <p className="Etapes">Etapes de la recette en vidéo</p>
                   </button>
                 </div>
 

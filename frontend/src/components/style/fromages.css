@@ -13,7 +13,20 @@
   justify-content: space-around;
   margin-left: 17%;
   margin-right: 17%;
-  margin-top: 25%;
+}
+
+.btn {
+  height: 30px;
+  width: 30px;
+  font-size: 170%;
+  background-color: rgba(135, 135, 135, 0.764);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 87%;
+  left: 90%;
 }
 
 .carte {

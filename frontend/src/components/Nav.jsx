@@ -41,16 +41,13 @@ function Nav() {
       <nav className="navbarMobile">
         <ul className="listNav">
           <CheeseLink
-            // cheeseOn={cheeseOn}
             cheeseURL={isCheeseOn ? iconeFromageSelected : iconeFromage}
           />
           <HomeLink
-            // homeOn={homeOn}
             homeURL={isHomeOn ? iconeAccueilSelected : iconeAccueil}
             homeClass={isHomeOn ? "linkNav selected" : "linkNav"}
           />
           <RecipeLink
-            // recipeOn={recipeOn}
             recipeURL={isRecipeOn ? iconeCuisineSelected : iconeCuisine}
           />
         </ul>

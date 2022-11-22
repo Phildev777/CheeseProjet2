@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import CarouselDesktop from "./CarouselDesktop";
 import "./style/Carousel.css";
 
@@ -56,14 +57,15 @@ function Carousel() {
           &#10096;
         </button>
         <CarouselDesktop />
-        {slide[picture] && (
-          <img
-            className="slide"
-            src={slide[picture].fromageImage}
-            alt="slide Cheese"
-          />
-        )}
-
+        <Link to="/Fromages">
+          {slide[picture] && (
+            <img
+              className="slide"
+              src={slide[picture].fromageImage}
+              alt="slide Cheese"
+            />
+          )}
+        </Link>
         <button className="buttonnext" type="button" onClick={changeNext}>
           &#10097;
         </button>

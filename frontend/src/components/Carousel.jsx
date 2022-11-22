@@ -1,23 +1,38 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../assets/img/img1.jpeg";
-import img2 from "../assets/img/img2.jpeg";
-import img3 from "../assets/img/img3.jpeg";
+import axios from "axios";
 import CarouselDesktop from "./CarouselDesktop";
 import "./style/Carousel.css";
 
 function Carousel() {
   const [picture, setPicture] = useState(1);
+  const [slide, setSlide] = useState([]);
+  const carouselApi = () => {
+    axios.get(`http://localhost:5000/api/cheese`).then((res) => {
+      const sliderData = [];
+
+      res.data.map((element) => {
+        return sliderData.push({
+          fromageImage: element.fromageImage,
+        });
+      });
+      setSlide(sliderData);
+    });
+  };
+
+  useEffect(() => {
+    carouselApi();
+  }, []);
 
   const changeNext = () => {
-    if (picture === 3) {
-      setPicture(1);
+    if (picture === slide.length - 1) {
+      setPicture(0);
     } else {
       setPicture(picture + 1);
     }
   };
   const changePrev = () => {
-    if (picture === 1) {
-      setPicture(3);
+    if (picture === 0) {
+      setPicture(slide.length - 1);
     } else {
       setPicture(picture - 1);
     }
@@ -31,7 +46,6 @@ function Carousel() {
         setShowArrow(true);
       }
     });
-    // return () => window.removeEventListener("scroll");
   }, []);
   return (
     <div className="FPCarousel">
@@ -42,15 +56,14 @@ function Carousel() {
           &#10096;
         </button>
         <CarouselDesktop />
-        {picture === 1 && (
-          <img className="slide" src={img1} alt="slide Cheese" />
+        {slide[picture] && (
+          <img
+            className="slide"
+            src={slide[picture].fromageImage}
+            alt="slide Cheese"
+          />
         )}
-        {picture === 2 && (
-          <img className="slide" src={img2} alt="slide Cheese" />
-        )}
-        {picture === 3 && (
-          <img className="slide" src={img3} alt="slide Cheese" />
-        )}
+
         <button className="buttonnext" type="button" onClick={changeNext}>
           &#10097;
         </button>

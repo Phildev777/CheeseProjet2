@@ -11,7 +11,6 @@ function Formulaire() {
 
   const display = (e) => {
     e.preventDefault();
-    console.warn(`${nom}, ${prenom}, ${mail}, ${message}`);
   };
 
   return (

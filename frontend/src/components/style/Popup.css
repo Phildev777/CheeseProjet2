@@ -37,13 +37,19 @@
 .popup-title {
   font-size: 300%;
   margin: 8%;
-  color: #ffd369;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121,
+    -1px -1px 0 #212121, 1px 0px 0 #212121, 0px 1px 0 #212121,
+    -1px 0px 0 #212121, 0px -1px 0 #212121;
 }
 
 .popup-diag {
   font-size: 200%;
   margin: 0% 10% 5% 10%;
-  color: #ffd369;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121,
+    -1px -1px 0 #212121, 1px 0px 0 #212121, 0px 1px 0 #212121,
+    -1px 0px 0 #212121, 0px -1px 0 #212121;
 }
 
 .close-btn {
@@ -51,7 +57,7 @@
   padding: 2%;
   border-radius: 10px;
   font-family: "Alice", serif;
-  color: #ffd369;
+  color: #ffffff;
   background-color: #212121;
   border: none;
 }

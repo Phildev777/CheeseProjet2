@@ -35,7 +35,7 @@ function MapCarteRecette({
 
             <div
               className="RecipeName"
-              style={{ display: isFlipped ? "none" : "block" }}
+              style={{ display: isFlipped ? "none" : "flex" }}
             >
               <h3 className="NameFront">{recipeName}</h3>
             </div>
@@ -43,12 +43,12 @@ function MapCarteRecette({
 
           <div className="card__face card__face--back">
             {isFlipped && (
-              <div>
+              <div className="backOfCard">
                 <h3 className="CtBack" id="Charact1">
                   {recipeName}
                 </h3>
 
-                <div>
+                <div className="imgBackContainer">
                   <img className="PhRecetteBack" src={recipeImg} alt="test" />
                 </div>
 
@@ -65,12 +65,12 @@ function MapCarteRecette({
                     className="liensRecipe"
                     onClick={handleNewTab}
                   >
-                    <h2 className="Etapes">Etapes de la recette en vidéo</h2>
+                    <p className="Etapes">Etapes de la recette en vidéo</p>
                   </button>
                 </div>
 
                 <div className="CtBack" id="Charact4">
-                  <p>Ingrédients : {ingredients}</p>
+                  <p className="ingredients">Ingrédients : {ingredients}</p>
                 </div>
               </div>
             )}

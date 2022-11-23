@@ -65,7 +65,7 @@ function MapCarteRecette({
                     className="liensRecipe"
                     onClick={handleNewTab}
                   >
-                    <p className="Etapes">Etapes de la recette en vidéo</p>
+                    Etapes de la recette en vidéo
                   </button>
                 </div>
 

@@ -1,7 +1,7 @@
-import avatarH from "../assets/img/avatarhomme.png";
 import a from "../assets/img/amelie.jpg";
 import b from "../assets/img/baptiste.jpg";
 import p from "../assets/img/philippe.jpg";
+import l from "../assets/img/lorian.jpg";
 
 const DataHome = [
   {
@@ -28,7 +28,7 @@ const DataHome = [
   {
     id: 4,
     name: "Lorian T.",
-    image: avatarH,
+    image: l,
     description:
       "Le barde, timide et réservé, surtout hyperactif, mais il sait être attentif et disponible malgré son filtre absent lorsqu'il prend la parole.",
   },

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Head {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  position: relative;
+}
+
+.backgroundHead {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  object-position: 0 25%;
+}
+
+.Head h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 9vw, 4.5rem);
+  text-shadow: 0px 2px 5px #212121;
+  color: #ffffff;
+  background-color: #21212155;
+  height: 35vh;
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 10vh;
+  position: absolute;
+  top: 0;
+}
+
+.headerTitle {
+  background-color: #080808;
+  color: #ffc83c;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  box-shadow: 0 2px 6px #080808;
+}
+
+@media screen and (min-width: 800px) {
+  .mobileTitle {
+    display: none;
+  }
+
+  .Head {
+    margin-top: 7vh;
+  }
+}

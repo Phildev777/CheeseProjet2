@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+  position: fixed;
+  top: 15vh;
+  right: 25vw;
+  z-index: 2;
+  height: 70vh;
+  width: 50vw;
+}
+
+.backOfCard {
+  max-height: 100%;
+  width: 100%;
+}
+
+.card__face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front:hover {
+  font-family: "Playfair Display";
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
+  border-radius: 17px;
+  transition: 0.3s;
+}
+
+.card__face--front .RecipeName:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.card__face--front {
+  display: flex;
+  justify-content: center;
+  background-size: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 20px 2px 20px 2px;
+}
+
+.card__face--front .RecipeName {
+  font-size: 28px;
+  background-color: #21212165;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  font-family: "Playfair Display";
+  color: white;
+  opacity: 0;
+  text-shadow: 5px 1px 3px black;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+  background-color: #212121;
+  position: fixed;
+  box-shadow: 1px 1px 8px 7px #212121;
+  height: 70vh;
+  width: 50vw;
+  padding: 2%;
+  border: 4px solid #ffd369;
+  border-radius: 40px 2px 40px 2px;
+  z-index: 2;
+}
+
+.Rcards {
+  width: 20vw;
+  height: 45vh;
+}
+
+.CtRecette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+#CtReverse {
+  gap: 60px;
+  width: 50%;
+  font-family: "Playfair Display";
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.CtBack {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.PhRecette {
+  object-fit: cover;
+  width: 100%;
+}
+
+.PhRecetteBack {
+  display: flex;
+  width: 20vw;
+  margin-left: 10%;
+  max-height: 12vw;
+  margin-top: 5vh;
+  float: right;
+}
+
+.NameFront {
+  font-size: 2.5rem;
+  padding: 2vh;
+}
+
+#Charact1 {
+  font-family: "Playfair Display";
+  margin-right: 20vw;
+  color: #ffd369;
+  font-size: 60px;
+  width: 100%;
+}
+
+.liensRecipe {
+  background-color: #d9d9d9;
+  color: #212121;
+  height: 100%;
+  font-size: 20px;
+  font-family: "Playfair Display";
+}
+
+.liensRecipe:hover {
+  box-shadow: 1px 1px 8px 7px white;
+}
+
+#Charact2 {
+  margin-left: 2vw;
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
+  border-radius: 2px 2px 2px 2px;
+  justify-content: center;
+  background-color: #d9d9d9;
+  color: #212121;
+  margin-bottom: 4vh;
+  margin-top: 5vh;
+}
+
+#Charact3 {
+  margin-left: 2vw;
+  height: 10vh;
+  border-radius: 20px 2px 20px 2px;
+  background-color: #d9d9d9;
+  color: #212121;
+  font-size: 1.5rem;
+}
+
+#Charact4 {
+  margin-top: 2vw;
+  font-family: "Playfair Display";
+  border-radius: 2px 20px 2px 20px;
+  background-color: #d9d9d9;
+  margin-right: 1vw;
+  color: #212121;
+  font-size: 1.2rem;
+  margin-left: 2vw;
+  height: fit-content;
+  max-height: 18vh;
+  min-height: 12vh;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.lien {
+  text-decoration: none;
+  color: #212121;
+}
+
+.lien:hover {
+  box-shadow: 1px 1px 8px 7px white;
+}
+
+.Rname {
+  font-family: "Playfair Display";
+}
+
+.liensRecipe {
+  border: none;
+  font-family: "Playfair Display";
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .PhRecetteBack {
+    position: relative;
+    width: 50vw;
+    box-shadow: 1px 1px 8px 7px rgba(0, 0, 0, 0.69);
+    overflow: hidden;
+    height: 20vh;
+    max-height: 20vh;
+    margin: 0;
+  }
+
+  .imgBackContainer {
+    height: 20vh;
+    width: 50vw;
+    margin: -10vh auto 5vh;
+  }
+
+  #Charact1 {
+    display: none;
+  }
+
+  #Charact4 {
+    font-size: 1.1rem;
+    margin-top: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: scroll;
+    max-height: 25vh;
+    /* padding: 8px; */
+    overflow: scroll;
+    width: 80%;
+  }
+
+  .ingredients {
+    padding: 16px 8px 8px;
+  }
+
+  #Charact2 {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  #Charact3 {
+    font-size: 1.2rem;
+    margin: 2vh auto;
+    width: 80%;
+  }
+
+  .NameFront {
+    height: 100%;
+    background-color: #21212165;
+    padding-top: 65%;
+    padding-right: 40%;
+    font-size: 48px;
+  }
+
+  .liensRecipe {
+    font-size: 32px;
+  }
+
+  .card__face--front .RecipeName {
+    font-size: 28px;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: "Playfair Display";
+  }
+
+  .card.is-flipped {
+    top: 15vh;
+    right: 10vw;
+    z-index: 2;
+    height: 70vh;
+    width: 80vw;
+  }
+
+  .backOfCard {
+    width: 80vw;
+    height: 70vh;
+  }
+
+  .card__face--back {
+    transform: rotateY(180deg);
+    background-color: #212121;
+    position: absolute;
+    height: 70vh;
+    box-shadow: 1px 1px 8px 7px #212121;
+    width: 80vw;
+    border: 4px solid #ffd369;
+    border-radius: 40px 2px 40px 2px;
+    padding: 0;
+  }
+
+  .liensRecipe {
+    background-color: #d9d9d9;
+    color: #212121;
+    height: 100%;
+    font-size: 20px;
+    font-family: "Playfair Display";
+    margin-top: 2vh;
+  }
+
+  .Rcards {
+    width: 70vw;
+    height: 30vh;
+  }
+}

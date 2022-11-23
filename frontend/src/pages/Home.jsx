@@ -1,36 +1,36 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Carousel from "../components/Carousel";
+import "../components/style/home.css";
+import Staff from "../components/Staff";
+import Formulaire from "../components/Formulaire";
 
-export default function Home() {
+function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state !== null) {
+      document.getElementById("contact").scrollIntoView();
+    }
+  }, [location]);
+
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
+    <div className="homepage">
+      <Carousel />
+      <h3 className="texthome">Qui sommes nous ?</h3>
+      <Staff />
+      <br id="contact" />
+      <h3 className="texthome">Nous contacter</h3>
+      <p className="textcontact">
+        Nous nous tenons à votre disposition pour toute suggestion ou demande de
+        conseil.
       </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
+      <p className="textcontact">
+        Nous nous engageons à vous répondre dans les meilleurs délais.
       </p>
-    </header>
+      <Formulaire />
+    </div>
   );
 }
+
+export default Home;

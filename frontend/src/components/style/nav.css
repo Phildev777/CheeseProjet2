@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  height: 8vh;
+  background-color: #080808;
+  z-index: 10;
+}
+
+.navbarMobile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  box-shadow: 0 -1px 6px #080808;
+}
+
+.navbarDesktop {
+  display: none;
+}
+
+.iconeNav {
+  height: 100%;
+  width: 6vh;
+}
+
+.listNav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+
+.itemsNav {
+  height: 6vh;
+}
+
+.linkNav {
+  background-color: #080808;
+  border: none;
+  transition: 0.2s;
+  height: 100%;
+}
+
+.selected {
+  height: 8vh;
+}
+
+@media screen and (min-width: 800px) {
+  .navbarMobile {
+    display: none;
+  }
+
+  .navbarDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    background-color: #080808;
+    width: 100vw;
+    padding: 4px 0 4px 4px;
+    position: fixed;
+    top: 0;
+  }
+
+  .logo {
+    height: 7vh;
+    width: 7vh;
+    padding: 4px;
+  }
+
+  .logoImg {
+    width: 100%;
+  }
+
+  .desktopLinks {
+    display: flex;
+    align-items: center;
+    width: clamp(500px, 60vw, 750px);
+    height: 100%;
+  }
+
+  .desktopLi {
+    width: clamp(166px, 20vw, 300px);
+    text-align: center;
+    margin: 2vw 0;
+  }
+
+  .desktopLink {
+    text-decoration: none;
+    color: #ffc83c;
+    font-family: "Cinzel";
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s;
+    margin: 0;
+    padding: 2px 4px;
+    border-radius: 1px 10px 1px 10px;
+  }
+
+  .desktopLink:hover {
+    /* background-color: #ffc83c; */
+    border: 1px solid #ffc83c;
+  }
+}

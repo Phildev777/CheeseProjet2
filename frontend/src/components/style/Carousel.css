@@ -1,0 +1,135 @@
+.containerimage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: calc(
+    (93vh - clamp(252px, 70vh, 375px) - clamp(2.5rem, 7vw, 5rem) - 24px) / 2
+  );
+}
+
+.carouselDesktop {
+  display: none;
+}
+
+.FPCarousel {
+  height: 93vh;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 10, 0) 0%,
+      rgba(19, 19, 20, 0.8848272585401348) 100%,
+      rgba(129, 128, 89, 0.5935107319294906) 100%
+    ),
+    url("../../assets/img/boisNoir.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.FPTitle {
+  padding-top: 24px;
+  color: #ffc83c;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: lighter;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+.slide {
+  width: clamp(252px, 70vw, 375px);
+  height: clamp(252px, 70vw, 375px);
+  border-radius: 50%;
+  border: 1px solid #ffd369;
+  transition-duration: 0.5s;
+}
+
+.buttonnext,
+.buttonprev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffd369;
+  background-color: transparent;
+  border: none;
+  font-size: 120%;
+  opacity: 0.6;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(0px, 0px) rotate(90deg);
+  }
+
+  to {
+    transform: translate(0px, 3vh) rotate(90deg);
+  }
+}
+
+.scrollDown {
+  font-size: 3rem;
+  color: #ffc83c;
+  text-align: center;
+  height: 65px;
+  width: 65px;
+  position: fixed;
+  top: 80vh;
+  margin: 0;
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  .slide {
+    width: clamp(252px, 65vh, 375px);
+    height: clamp(252px, 65vh, 375px);
+  }
+
+  .FPTitle {
+    font-size: clamp(2.5rem, 7vh, 5rem);
+  }
+
+  .containerimage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .FPCarousel {
+    margin-top: 7vh;
+  }
+
+  .scrollDown {
+    top: 90vh;
+  }
+
+  .slide {
+    margin: 0;
+    display: none;
+  }
+
+  .buttonnext,
+  .buttonprev {
+    display: none;
+  }
+
+  .carouselDesktop {
+    display: initial;
+    max-width: 100vw;
+    height: 100%;
+  }
+
+  .containerimage {
+    margin: 0;
+    padding: 0;
+  }
+}

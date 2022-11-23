@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&display=swap%27");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mapfromage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin-left: 19%;
+  margin-right: 19%;
+  margin-top: 25%;
+}
+
+.carte {
+  width: 37vh;
+  height: 45vh;
+  margin-bottom: 30%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.carte.is-flipped1 {
+  transform: rotateY(180deg) scale(1.15);
+  z-index: 1;
+}
+
+.carte__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.carte__face--front:hover {
+  font-family: "Playfair Display";
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.347);
+  transition: 0.3s;
+  transform: scale(1.1);
+  z-index: auto;
+}
+
+.carte__face--front {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.32);
+  border-radius: 17px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 40px 2px 40px 2px;
+}
+
+.carte__face--back {
+  background: #212121;
+  transform: rotateY(180deg);
+  border: 1px solid #ffd369;
+  border-radius: 2px 40px 2px 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 1.2vh;
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.322);
+}
+
+.carte__face--back h2 {
+  background-color: aliceblue;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vh;
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 80%;
+  height: 5%;
+}
+
+.carte__face--back h3 {
+  background-color: aliceblue;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 80%;
+  height: 5%;
+}
+
+.carte__face--back h4 {
+  background-color: aliceblue;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  height: 5%;
+}
+
+.carte__face--back p {
+  background-color: aliceblue;
+  border-radius: 2px 10px 2px 10px;
+  display: block;
+  justify-content: center;
+  padding: 2%;
+  font-size: 1.4vh;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.carte__face--back h1 {
+  color: #ffd369;
+  font-family: "Alice", serif;
+  font-size: 1.4vh;
+  display: flex;
+  justify-content: center;
+}
+
+.carte__face--front h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Alice", serif;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.limage img {
+  height: 100px;
+  width: 100px;
+  margin-top: -20%;
+  margin-left: 33%;
+  border-radius: 50%;
+  border: 1px solid #FFD369(255, 238, 5, 0.868);
+}
+
+.image1 img {
+  width: 30vh;
+  height: 30vh;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid #ffd369;
+  box-shadow: 9px 3px 9px 1px rgba(0, 0, 0, 0.342);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .carte.is-flipped1 {
+    transform: rotateY(180deg) scale(1.8);
+    z-index: 1;
+  }
+
+  .mapfromage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0%;
+  }
+
+  .carte {
+    width: 37vh;
+    height: 45vh;
+    margin-bottom: 30%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .carte__face--front {
+    margin-right: 3000px;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.61);
+    border-radius: 17px;
+    border: none;
+    border-radius: 40px 2px 40px 2px;
+  }
+
+  .carte__face--front {
+    background-size: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    box-shadow: none;
+    border-radius: none;
+  }
+
+  .carte__face--back {
+    background: #212121;
+    transform: rotateY(180deg);
+    border: 1px solid #FFD369(255, 238, 5, 0.755);
+    border-radius: 2px 20px 2px 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 1.2vh;
+  }
+
+  .carte__face--back h2 {
+    background-color: aliceblue;
+    border-radius: 2px;
+    display: flex;
+    font-size: 1.4vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 30%;
+    width: 60%;
+    height: 5%;
+  }
+
+  .carte__face--back h3 {
+    background-color: aliceblue;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 30%;
+    width: 60%;
+    height: 5%;
+  }
+
+  .carte__face--back h4 {
+    background-color: aliceblue;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 5%;
+  }
+
+  .carte__face--back p {
+    background-color: aliceblue;
+    border-radius: 2px 10px 2px 10px;
+    display: flex;
+    justify-content: center;
+    font-size: none;
+    padding: 2%;
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .carte__face--back h1 {
+    color: #ffd369;
+    font-family: "Alice", serif;
+    font-size: 100%;
+    display: flex;
+    font-size: 160%;
+    margin: 3%;
+    justify-content: center;
+  }
+
+  .carte__face--front h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Alice", serif;
+    font-size: 100%;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .limage img {
+    height: 70px;
+    width: 70px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 3%;
+    border-radius: 50%;
+    border: 1px solid #ffd369;
+  }
+}

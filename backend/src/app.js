@@ -2,17 +2,13 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
-const router = require("./router");
+const cheeseRoutes = require("./cheeseRoutes.jsx");
+const recipesRoutes = require("./recipesRoutes.jsx");
 
 const app = express();
 
 // use some application-level middlewares
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL ?? "http://localhost:3000",
-    optionsSuccessStatus: 200,
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
@@ -23,7 +19,8 @@ app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.static(path.join(__dirname, "..", "..", "frontend", "dist")));
 
 // API routes
-app.use(router);
+app.use("/api/cheese", cheeseRoutes);
+app.use("/api/recipe", recipesRoutes);
 
 // Redirect all requests to the REACT app
 const reactIndexFile = path.join(
